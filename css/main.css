@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(16, 0, 43);
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(243, 243, 243);
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgb(243, 243, 243);
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+
+h3 {
+  color: rgb(243, 243, 243);
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h4 {
+  color: rgb(243, 243, 243);
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgb(16, 0, 43);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin-top: -1.3rem;
+}
+.navbar .logo {
+  width: 17.25em;
+  height: 9.06em;
+  grid-column: 1/3;
+}
+.navbar .menu {
+  grid-column: 3/11;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .menu li {
+  list-style: none;
+}
+.navbar .menu li a {
+  color: rgb(90, 24, 154);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700rem;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.navbar .menu li a:hover {
+  color: rgb(224, 210, 255);
+  font-weight: 700rem;
+}
+.navbar .menu-bar {
+  display: none;
+}
+
+.impala-nov {
+  height: 140rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40vh 60vh 100vh;
+  grid-template-areas: "icong icong icong" "susg susg susg" "leakg leakg leakg";
+  /*--- Logos Music ---*/
+  /*--- Suscripcion ---*/
+  /*--- New Leaks ---*/
+}
+.impala-nov .logo-music {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 7rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.impala-nov .logo-music a img {
+  width: 11.5rem;
+  height: 11.5rem;
+}
+.impala-nov .suscription {
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 400rem;
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: rgb(243, 243, 243);
+}
+.impala-nov .suscription h3 {
+  padding-bottom: 5%;
+}
+.impala-nov .suscription form label {
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 8%;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.impala-nov .suscription form .input-submit {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 8%;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.impala-nov .suscription form .input-submit .text-sub {
+  background-color: rgb(0, 1, 2);
+}
+.impala-nov .suscription form .input-submit .input-sub {
+  background-color: rgb(0, 1, 2);
+}
+.impala-nov .leakg .new-leak-text {
+  justify-content: center;
+  align-content: center;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.impala-nov .leakg .video-leak {
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+/*--Grid Areas--*/
+.icong {
+  grid-area: icong;
+}
+
+.susg {
+  grid-area: susg;
+}
+
+.leakg {
+  grid-area: leakg;
+}
+
+/*--*/
+/*______________________- Seccion Tour -______________________*/
+.impala-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
+  background-size: cover;
+  height: 80rem;
+}
+.impala-tour .tourg {
+  text-align: justify;
+  line-height: 2.2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20%;
+  color: rgb(243, 243, 243);
+}
+.impala-tour .tourg #entradas {
+  color: rgb(243, 243, 243);
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.impala-tour .tourg #entradas:hover {
+  color: rgb(224, 210, 255);
+}
+.impala-tour .tourg #button-tour {
+  padding-top: 10rem;
+  padding-left: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/*______________________- Seccion Merch -______________________*/
+.impala-merch {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
+  background-size: cover;
+  display: grid;
+  grid-gap: 3rem;
+  color: rgb(243, 243, 243);
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 20vh 20vh 20vh 10vh 1vh;
+  grid-template-areas: ". . h3-merch h3-merch. ." "merch-1 merch-1 merch-3 merch-4 merch-2 merch-2 " "merch-1 merch-1 merch-5 merch-6 merch-2 merch-2 " ". . . . . ." ". . button-merch button-merch . .";
+}
+.impala-merch .h3-merch {
+  grid-area: h3-merch;
+  padding-top: 10rem;
+  justify-content: center;
+  text-align: center;
+}
+.impala-merch .merch-1 {
+  grid-area: merch-1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+.impala-merch .merch-1 .container-text-merch {
+  position: relative;
+}
+.impala-merch .merch-1 .container-text-merch .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.impala-merch .merch-1 .container-text-merch .image-merch:hover {
+  opacity: 0.3;
+}
+.impala-merch .merch-1 .container-text-merch .image-merch .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.impala-merch .merch-1 .container-text-merch .image-merch .middle-merch:hover {
+  opacity: 1;
+}
+.impala-merch .merch-1 .container-text-merch .image-merch .middle-merch .text-merch {
+  white-space: pre-wrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+.impala-merch .merch-2 {
+  grid-area: merch-2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.impala-merch .merch-2 .container-text-merch {
+  position: relative;
+}
+.impala-merch .merch-2 .container-text-merch .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.impala-merch .merch-2 .container-text-merch .image-merch:hover {
+  opacity: 0.3;
+}
+.impala-merch .merch-2 .container-text-merch .image-merch .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.impala-merch .merch-2 .container-text-merch .image-merch .middle-merch:hover {
+  opacity: 1;
+}
+.impala-merch .merch-2 .container-text-merch .image-merch .middle-merch .text-merch {
+  white-space: pre-wrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+.impala-merch .merch-3 {
+  grid-area: merch-3;
+  width: 100%;
+  padding-bottom: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.impala-merch .merch-3 .container-text-merch {
+  position: relative;
+}
+.impala-merch .merch-3 .container-text-merch .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.impala-merch .merch-3 .container-text-merch .image-merch:hover {
+  opacity: 0.3;
+}
+.impala-merch .merch-3 .container-text-merch .image-merch .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.impala-merch .merch-3 .container-text-merch .image-merch .middle-merch:hover {
+  opacity: 1;
+}
+.impala-merch .merch-3 .container-text-merch .image-merch .middle-merch .text-merch {
+  white-space: pre-wrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+.impala-merch .merch-4 {
+  grid-area: merch-4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.impala-merch .merch-4 .container-text-merch {
+  position: relative;
+}
+.impala-merch .merch-4 .container-text-merch .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.impala-merch .merch-4 .container-text-merch .image-merch:hover {
+  opacity: 0.3;
+}
+.impala-merch .merch-4 .container-text-merch .image-merch .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.impala-merch .merch-4 .container-text-merch .image-merch .middle-merch:hover {
+  opacity: 1;
+}
+.impala-merch .merch-4 .container-text-merch .image-merch .middle-merch .text-merch {
+  white-space: pre-wrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+.impala-merch .merch-5 {
+  grid-area: merch-5;
+}
+.impala-merch .merch-5 .container-text-merch {
+  position: relative;
+}
+.impala-merch .merch-5 .container-text-merch .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.impala-merch .merch-5 .container-text-merch .image-merch:hover {
+  opacity: 0.3;
+}
+.impala-merch .merch-5 .container-text-merch .image-merch .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.impala-merch .merch-5 .container-text-merch .image-merch .middle-merch:hover {
+  opacity: 1;
+}
+.impala-merch .merch-5 .container-text-merch .image-merch .middle-merch .text-merch {
+  white-space: pre-wrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+.impala-merch .merch-6 {
+  grid-area: merch-6;
+  padding-top: 50em;
+}
+.impala-merch .merch-6 .container-text-merch {
+  position: relative;
+}
+.impala-merch .merch-6 .container-text-merch .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.impala-merch .merch-6 .container-text-merch .image-merch:hover {
+  opacity: 0.3;
+}
+.impala-merch .merch-6 .container-text-merch .image-merch .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.impala-merch .merch-6 .container-text-merch .image-merch .middle-merch:hover {
+  opacity: 1;
+}
+.impala-merch .merch-6 .container-text-merch .image-merch .middle-merch .text-merch {
+  white-space: pre-wrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400rem;
+}
+.impala-merch .button-merch {
+  grid-area: button-merch;
+  padding-left: 31%;
+  justify-content: center;
+  align-content: center;
+}
+.impala-merch .button-merch .button-merch a {
+  padding-bottom: 10rem;
+  background: none;
+  border: 2px solid rgb(224, 210, 255);
+  border-radius: 3rem;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 10px 0px rgb(224, 210, 255);
+  cursor: pointer;
+  font-weight: 30rem;
+  line-height: 2.2rem;
+}
+.impala-merch .button-merch .button-merch a:hover {
+  box-shadow: none;
+  background-color: black;
+  color: #fff;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+/*# sourceMappingURL=main.css.map */

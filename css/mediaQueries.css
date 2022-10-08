@@ -1,0 +1,281 @@
+
+@media (max-width:  992px) {
+
+	.navbar .menu{
+	    padding: 4rem 2rem 4rem 2rem;
+	}
+
+	.navbar .menu a{
+    	font-size: 1.5rem;
+        line-height: 2.2rem;
+        padding: 2rem;
+    }
+
+    .impala-intro .introg{
+    	font-size: 1.3rem;
+    	padding-top: 5rem;
+ 		padding-left: 3rem;
+  		padding-right: 3rem;
+  	}
+
+  	.impala-tour{
+  		height: 60rem;
+  	}
+
+  	.impala-merch{
+  		grid-template-columns: repeat(3, 1fr) ;
+  		grid-template-rows: 20vh 20vh 10vh 20vh 10vh;
+  		grid-template-areas:
+		 " h3-merch h3-merch h3-merch "
+		 "merch-1 merch-3 merch-6 "
+		 ". . ."
+		 " merch-2 merch-4 merch-5  "
+		 " . button-merch  . "
+  	}
+  	.merch-1{
+  		width: 25rem ;
+ 		background-color: #9950B8;
+  	}
+
+  	.merch-2{
+  		width: 25rem;
+  		background-color:#8B36A7 ;
+  	}
+
+  	.merch-3{
+  		width: 15rem;
+  		background-color: #ED51C6;
+  	}
+
+  	.merch-4{
+  		width: 15rem;
+  		background-color: #FF1493;
+  	}
+
+  	.merch-5{
+  		width: 15rem;
+  		background-color: #DF41E9;
+  	}
+
+  	.merch-6{
+  		width: 15rem;
+  		background-color: #D468E4;
+  	}
+
+  	.h3-merch{		
+  		margin-bottom: 15rem;
+  	}
+		
+	.impala-nov{
+  		height: 120rem;
+  	}
+
+}
+
+
+
+@media (max-width:  768px){
+
+	.navbar .logo{
+      width: 13.25em;
+      height: 7.06em;
+  	}
+
+	.navbar .menu a{
+    	font-size: 1.3rem;
+        line-height: 2rem;
+        padding: 1.1rem;
+    }
+
+
+    .impala-intro .introg{
+    	font-size: 1.2rem;
+    	padding-top: 3rem;
+ 		padding-left: 1rem;
+  		padding-right: 1rem;
+  	}
+
+  	.logo-music{
+	 	display: flex;
+	  	flex-direction: row;
+ 		justify-content: space-evenly;
+ 		align-items: center;
+ 		padding-top: 7rem;
+	  	padding-left: 10%;
+		padding-right: 10%;
+	}
+  	.logo-music a img{
+ 		width: 7.5rem;
+  		height: 7.5rem;
+	}
+		
+	.impala-nov{
+  		height: 110rem;
+  	}
+
+	.impala-tour{
+  		height: 100rem;
+  	}
+
+  	.pie-img{
+  		width: 13.25em;
+		height: 7.06em;
+    }
+    .pie-socialmedia a img{
+    	width: 3.1rem;
+    	height: 3.1rem;
+    }
+    .button-merch {
+  		font-size: 1.5rem;
+  		padding-left: 1%;
+  		padding-right: 2%;
+    }
+    .merch-1{
+  		width: 22rem ;
+ 		background-color: #9950B8;
+  	}
+
+  	.merch-2{
+  		width: 22rem;
+  		background-color:#8B36A7 ;
+  	}
+
+  	.merch-3{
+  		width: 13rem;
+  		background-color: #ED51C6;
+  	}
+
+  	.merch-4{
+  		width: 13rem;
+  		background-color: #FF1493;
+  	}
+
+  	.merch-5{
+  		width: 13rem;
+  		background-color: #DF41E9;
+  	}
+
+  	.merch-6{
+  		width: 13rem;
+  		background-color: #D468E4;
+  	}
+
+}
+
+@media (max-width:  576px){
+.impala-intro{
+  height: 70rem;
+  
+  grid-template-columns:repeat(1, 1fr);
+  grid-template-rows:repeat(6, 15vh) ;
+  grid-template-areas: 
+  "cg"
+  "cg"
+  "cg"
+  "introg "
+  "introg "
+  "introg "
+  ;
+}
+
+.impala-merch{
+  height: 160rem;
+  grid-template-columns: repeat(1, 1fr) ;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+  grid-template-areas:
+  "h3-merch" 
+  "merch-1 "
+  "merch-2 "
+  "merch-3 "
+  "merch-4 "
+  "merch-5 "
+  "merch-6 "
+  "button-merch";
+  justify-items: center;
+  align-items: center;
+  grid-gap: 7rem;
+
+}
+
+	.merch-1{
+  		width: 20rem ;
+ 		background-color: #9950B8;
+  	}
+
+  	.merch-2{
+  		width: 20rem;
+  		background-color:#8B36A7 ;
+  	}
+
+  	.merch-3{
+  		width: 20rem;
+  		background-color: #ED51C6;
+  	}
+
+  	.merch-4{
+  		width: 20rem;
+  		background-color: #FF1493;
+  	}
+
+  	.merch-5{
+  		width: 20rem;
+  		background-color: #DF41E9;
+  	}
+
+  	.merch-6{
+  		width: 20rem;
+  		background-color: #D468E4;
+  	}
+
+  
+  	.pie-socialmedia a img{
+    	width: 2.5rem;
+    	height: 2.5rem;
+    }
+    .logo-music a img{
+ 		width: 6.5rem;
+  		height: 6.5rem;
+	}
+
+}
+
+/*Boton Hamburguesa*/
+
+@media only screen and (max-width:  576px) {
+
+	.navbar {
+		position: relative;
+		z-index:1;
+	}
+
+	.navbar .menu-bar{
+		display: block;
+		grid-column: 11/12;
+		font-size: 3rem;
+		cursor: pointer;
+		color: rgb(90, 24, 154);
+
+	}
+
+	.navbar .menu a{
+    	font-size: 2rem;
+        line-height: 2.4rem;
+        padding: 2.2rem;
+    }
+	.navbar .menu{
+		position: absolute;
+		width: 100%;
+		height: 50rem;
+		display: grid;
+		align-items: center;
+		background-color:#7F7086;
+		margin-top: 59.1em;
+		transform: translateX(170%);
+		transition: all 1s;
+
+	}
+
+	.navbar .menu-toggle{
+		transform: translatex(40%);
+
+}
