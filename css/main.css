@@ -53,8 +53,15 @@ h4 {
   font-weight: bold;
 }
 
+#grid-container {
+  display: grid;
+  width: 100%;
+  grid-gap: 2rem;
+}
+
+/*______________________- Navbar -______________________*/
 .navbar {
-  background-color: rgb(16, 0, 43);
+  background-color: rgb(0, 0, 0);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
@@ -91,6 +98,49 @@ h4 {
   display: none;
 }
 
+/*______________________- Seccion Intro -______________________*/
+.impala-intro {
+  height: 50rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg1.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 15vh);
+  grid-template-areas: ".  .    .       introg introg introg" "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" ".  .    .       introg introg introg";
+  /*-----Texto Principal-----*/
+  /*----Carousel----*/
+}
+.impala-intro .cg {
+  grid-area: cg;
+}
+.impala-intro .introg {
+  grid-area: introg;
+  color: rgb(243, 243, 243);
+  padding-top: 10rem;
+  padding-bottom: 0;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300rem;
+  line-height: 2rem;
+  text-align: justify;
+  justify-content: 0;
+  align-items: 0;
+  background-color: none;
+}
+.impala-intro .carousel {
+  overflow: hidden;
+}
+.impala-intro .carousel img {
+  width: 100%;
+  min-height: 34rem;
+  max-height: 34rem;
+  object-fit: cover;
+}
+
+/*______________________- Seccion Novedades -______________________*/
 .impala-nov {
   height: 140rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
@@ -100,50 +150,72 @@ h4 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 40vh 60vh 100vh;
   grid-template-areas: "icong icong icong" "susg susg susg" "leakg leakg leakg";
+  /*--Grid Areas--*/
+  /*--*/
   /*--- Logos Music ---*/
   /*--- Suscripcion ---*/
   /*--- New Leaks ---*/
 }
+.impala-nov .icong {
+  grid-area: icong;
+}
+.impala-nov .susg {
+  grid-area: susg;
+}
+.impala-nov .leakg {
+  grid-area: leakg;
+}
 .impala-nov .logo-music {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 7rem;
   padding-left: 15%;
   padding-right: 15%;
+  padding-top: 7rem;
+  padding-bottom: 0;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 }
 .impala-nov .logo-music a img {
   width: 11.5rem;
   height: 11.5rem;
 }
 .impala-nov .suscription {
-  text-align: center;
-  line-height: 2rem;
-  font-weight: 400rem;
-  font-size: 1.4rem;
-  font-family: "Work Sans", sans-serif;
-  padding-left: 15%;
-  padding-right: 15%;
   color: rgb(243, 243, 243);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 15%;
+  padding-left: 15%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400rem;
+  line-height: 2rem;
+  text-align: center;
+  justify-content: 0;
+  align-items: 0;
+  background-color: 0;
 }
 .impala-nov .suscription h3 {
   padding-bottom: 5%;
 }
 .impala-nov .suscription form label {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 8%;
   justify-content: center;
   align-content: center;
-  padding-bottom: 8%;
-  padding-right: 15%;
-  padding-left: 15%;
+  align-items: center;
 }
 .impala-nov .suscription form .input-submit {
   display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8%;
+  padding-bottom: 0;
   justify-content: center;
   align-content: center;
-  padding-top: 8%;
-  padding-right: 15%;
-  padding-left: 15%;
+  align-items: center;
 }
 .impala-nov .suscription form .input-submit .text-sub {
   background-color: rgb(0, 1, 2);
@@ -152,10 +224,14 @@ h4 {
   background-color: rgb(0, 1, 2);
 }
 .impala-nov .leakg .new-leak-text {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
   justify-content: center;
   align-content: center;
-  padding-right: 15%;
-  padding-left: 15%;
+  align-items: center;
 }
 .impala-nov .leakg .video-leak {
   justify-content: center;
@@ -163,20 +239,6 @@ h4 {
   overflow: hidden;
 }
 
-/*--Grid Areas--*/
-.icong {
-  grid-area: icong;
-}
-
-.susg {
-  grid-area: susg;
-}
-
-.leakg {
-  grid-area: leakg;
-}
-
-/*--*/
 /*______________________- Seccion Tour -______________________*/
 .impala-tour {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
@@ -184,39 +246,65 @@ h4 {
   height: 80rem;
 }
 .impala-tour .tourg {
-  text-align: justify;
-  line-height: 2.2rem;
-  font-weight: bold;
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
   padding-top: 20%;
-  color: rgb(243, 243, 243);
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700rem;
+  line-height: 2.2rem;
+  text-align: justify;
+  justify-content: 0;
+  align-items: 0;
+  background-color: none;
 }
-.impala-tour .tourg #entradas {
+
+#entradas {
   color: rgb(243, 243, 243);
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
-.impala-tour .tourg #entradas:hover {
+#entradas:hover {
   color: rgb(224, 210, 255);
 }
-.impala-tour .tourg #button-tour {
-  padding-top: 10rem;
-  padding-left: 0.1rem;
+
+#button-tour {
   display: flex;
+  padding-left: 0.1rem;
+  padding-top: 10rem;
   justify-content: center;
   align-content: center;
+}
+#button-tour a {
+  padding-bottom: 10rem;
+  background: none;
+  border: 2px solid rgb(224, 210, 255);
+  border-radius: 3rem;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 10px 0px rgb(224, 210, 255);
+  cursor: pointer;
+  font-weight: 30rem;
+  line-height: 2.2rem;
+}
+#button-tour a:hover {
+  box-shadow: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(243, 243, 243);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
 }
 
 /*______________________- Seccion Merch -______________________*/
 .impala-merch {
-  height: 100vh;
+  height: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
   background-size: cover;
   display: grid;
-  grid-gap: 3rem;
   color: rgb(243, 243, 243);
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
@@ -224,15 +312,18 @@ h4 {
   font-weight: bold;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 20vh 20vh 20vh 10vh 1vh;
-  grid-template-areas: ". . h3-merch h3-merch. ." "merch-1 merch-1 merch-3 merch-4 merch-2 merch-2 " "merch-1 merch-1 merch-5 merch-6 merch-2 merch-2 " ". . . . . ." ". . button-merch button-merch . .";
+  grid-template-areas: "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch" "merch-1 merch-1 merch-3 merch-4 merch-2 merch-2 " "merch-1 merch-1 merch-5 merch-6 merch-2 merch-2 " ". . . . . ." ". . button-merch button-merch . .";
 }
 .impala-merch .h3-merch {
   grid-area: h3-merch;
-  padding-top: 10rem;
+  padding-top: 4rem;
   justify-content: center;
   text-align: center;
+  background: rgb(0, 0, 0);
+  width: 100%;
 }
 .impala-merch .merch-1 {
+  background-color: #9950B8;
   grid-area: merch-1;
   display: flex;
   justify-content: center;
@@ -253,7 +344,7 @@ h4 {
 .impala-merch .merch-1 .container-text-merch .image-merch:hover {
   opacity: 0.3;
 }
-.impala-merch .merch-1 .container-text-merch .image-merch .middle-merch {
+.impala-merch .merch-1 .container-text-merch .middle-merch {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -263,32 +354,32 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.impala-merch .merch-1 .container-text-merch .image-merch .middle-merch:hover {
+.impala-merch .merch-1 .container-text-merch .middle-merch:hover {
   opacity: 1;
 }
-.impala-merch .merch-1 .container-text-merch .image-merch .middle-merch .text-merch {
+.impala-merch .merch-1 .container-text-merch .middle-merch .text-merch {
   white-space: pre-wrap;
-  color: white;
+  color: rgb(243, 243, 243);
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: rgb(243, 243, 243);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400rem;
 }
 .impala-merch .merch-2 {
+  background-color: #8B36A7;
   grid-area: merch-2;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
+  width: 100%;
 }
 .impala-merch .merch-2 .container-text-merch {
   position: relative;
@@ -302,7 +393,7 @@ h4 {
 .impala-merch .merch-2 .container-text-merch .image-merch:hover {
   opacity: 0.3;
 }
-.impala-merch .merch-2 .container-text-merch .image-merch .middle-merch {
+.impala-merch .merch-2 .container-text-merch .middle-merch {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -312,33 +403,33 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.impala-merch .merch-2 .container-text-merch .image-merch .middle-merch:hover {
+.impala-merch .merch-2 .container-text-merch .middle-merch:hover {
   opacity: 1;
 }
-.impala-merch .merch-2 .container-text-merch .image-merch .middle-merch .text-merch {
+.impala-merch .merch-2 .container-text-merch .text-merch {
   white-space: pre-wrap;
-  color: white;
+  color: rgb(243, 243, 243);
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: rgb(243, 243, 243);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400rem;
 }
 .impala-merch .merch-3 {
-  grid-area: merch-3;
-  width: 100%;
+  background-color: #ED51C6;
   padding-bottom: 30%;
+  grid-area: merch-3;
   display: flex;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
+  width: 100%;
 }
 .impala-merch .merch-3 .container-text-merch {
   position: relative;
@@ -352,7 +443,7 @@ h4 {
 .impala-merch .merch-3 .container-text-merch .image-merch:hover {
   opacity: 0.3;
 }
-.impala-merch .merch-3 .container-text-merch .image-merch .middle-merch {
+.impala-merch .merch-3 .container-text-merch .middle-merch {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -362,32 +453,32 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.impala-merch .merch-3 .container-text-merch .image-merch .middle-merch:hover {
+.impala-merch .merch-3 .container-text-merch .middle-merch:hover {
   opacity: 1;
 }
-.impala-merch .merch-3 .container-text-merch .image-merch .middle-merch .text-merch {
+.impala-merch .merch-3 .container-text-merch .text-merch {
   white-space: pre-wrap;
-  color: white;
+  color: rgb(243, 243, 243);
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: rgb(243, 243, 243);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400rem;
 }
 .impala-merch .merch-4 {
+  background-color: #DF41E9;
   grid-area: merch-4;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
+  width: 100%;
 }
 .impala-merch .merch-4 .container-text-merch {
   position: relative;
@@ -401,7 +492,7 @@ h4 {
 .impala-merch .merch-4 .container-text-merch .image-merch:hover {
   opacity: 0.3;
 }
-.impala-merch .merch-4 .container-text-merch .image-merch .middle-merch {
+.impala-merch .merch-4 .container-text-merch .middle-merch {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -411,25 +502,25 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.impala-merch .merch-4 .container-text-merch .image-merch .middle-merch:hover {
+.impala-merch .merch-4 .container-text-merch .middle-merch:hover {
   opacity: 1;
 }
-.impala-merch .merch-4 .container-text-merch .image-merch .middle-merch .text-merch {
+.impala-merch .merch-4 .container-text-merch .text-merch {
   white-space: pre-wrap;
-  color: white;
+  color: rgb(243, 243, 243);
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: rgb(243, 243, 243);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400rem;
 }
 .impala-merch .merch-5 {
+  background-color: #FF1493;
   grid-area: merch-5;
 }
 .impala-merch .merch-5 .container-text-merch {
@@ -444,7 +535,7 @@ h4 {
 .impala-merch .merch-5 .container-text-merch .image-merch:hover {
   opacity: 0.3;
 }
-.impala-merch .merch-5 .container-text-merch .image-merch .middle-merch {
+.impala-merch .merch-5 .container-text-merch .middle-merch {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -454,25 +545,25 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.impala-merch .merch-5 .container-text-merch .image-merch .middle-merch:hover {
+.impala-merch .merch-5 .container-text-merch .middle-merch:hover {
   opacity: 1;
 }
-.impala-merch .merch-5 .container-text-merch .image-merch .middle-merch .text-merch {
+.impala-merch .merch-5 .container-text-merch .text-merch {
   white-space: pre-wrap;
-  color: white;
+  color: rgb(243, 243, 243);
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: rgb(243, 243, 243);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400rem;
 }
 .impala-merch .merch-6 {
+  background-color: #9950B8;
   grid-area: merch-6;
   padding-top: 50em;
 }
@@ -488,7 +579,7 @@ h4 {
 .impala-merch .merch-6 .container-text-merch .image-merch:hover {
   opacity: 0.3;
 }
-.impala-merch .merch-6 .container-text-merch .image-merch .middle-merch {
+.impala-merch .merch-6 .container-text-merch .middle-merch {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -498,19 +589,18 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.impala-merch .merch-6 .container-text-merch .image-merch .middle-merch:hover {
+.impala-merch .merch-6 .container-text-merch .middle-merch:hover {
   opacity: 1;
 }
-.impala-merch .merch-6 .container-text-merch .image-merch .middle-merch .text-merch {
+.impala-merch .merch-6 .container-text-merch .text-merch {
   white-space: pre-wrap;
-  color: white;
+  color: rgb(243, 243, 243);
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: rgb(243, 243, 243);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -518,11 +608,12 @@ h4 {
 }
 .impala-merch .button-merch {
   grid-area: button-merch;
-  padding-left: 31%;
+  padding-left: 0%;
+  padding-top: 0;
   justify-content: center;
   align-content: center;
 }
-.impala-merch .button-merch .button-merch a {
+.impala-merch .button-merch a {
   padding-bottom: 10rem;
   background: none;
   border: 2px solid rgb(224, 210, 255);
@@ -536,11 +627,422 @@ h4 {
   font-weight: 30rem;
   line-height: 2.2rem;
 }
-.impala-merch .button-merch .button-merch a:hover {
+.impala-merch .button-merch a:hover {
   box-shadow: none;
-  background-color: black;
-  color: #fff;
+  background-color: rgb(0, 0, 0);
+  color: rgb(243, 243, 243);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+.impala-merch .zoom {
+  transition: transform 0.2s;
+}
+.impala-merch .zoom:hover {
+  transform: scale(1.1);
+}
+
+/*__________ Discografia*_____________*/
+.discs {
+  display: grid;
+  grid-template-rows: 10rem 30rem 30rem 50rem;
+  grid-gap: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "h1-d h1-d h1-d" "disc-1 disc-2 disc-3" "disc-4 disc-5 disc-6" "disc-7 disc-8 .";
+}
+.discs .card {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 0, 0);
+}
+.discs .card .image-merch {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.discs .card .image-merch:hover {
+  opacity: 1;
+}
+.discs .card .middle-merch {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.discs .card .middle-merch:hover {
+  opacity: 2;
+}
+.discs .card .text-merch {
+  white-space: pre-wrap;
+  color: rgb(243, 243, 243);
+  position: absolute;
+  overflow: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700rem;
+  font-weight: 700rem;
+}
+.discs .card img {
+  max-width: 300px;
+  min-width: 299px;
+  height: 300px;
+}
+.discs .card .zoom {
+  transition: transform 0.5as;
+}
+.discs .card .zoom:hover {
+  transform: scale(1.1);
+}
+
+.h1-d {
+  grid-area: h1-d;
+}
+
+.disc-1 {
+  grid-area: disc-1;
+}
+
+.disc-2 {
+  grid-area: disc-2;
+}
+
+.disc-3 {
+  grid-area: disc-3;
+}
+
+.disc-4 {
+  grid-area: disc-4;
+}
+
+.disc-5 {
+  grid-area: disc-5;
+}
+
+.disc-6 {
+  grid-area: disc-6;
+}
+
+.disc-7 {
+  grid-area: disc-7;
+}
+
+.disc-8 {
+  grid-area: disc-8;
+}
+
+/*______________________- Footer -______________________*/
+.footerg {
+  padding-top: 7em;
+  padding-bottom: 7em;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300rem;
+  line-height: 0;
+  text-align: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.pie-img {
+  width: 17.25em;
+  height: 9.06em;
+}
+
+.pie-socialmedia a img {
+  justify-items: space-evenly;
+  width: 4em;
+  height: 4em;
+  background-color: rgb(224, 210, 255);
+}
+
+/* Media Queries */
+/*----------DESKTOP-SM----------*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar .menu {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  .navbar .menu a {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 2rem;
+  }
+  .impala-intro {
+    grid-area: ".  .    .       . . ." "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" ".  .    .       . . .";
+  }
+  .impala-intro .introg {
+    font-size: 1.3rem;
+    padding-top: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .impala-nov {
+    height: 120rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40vh 60vh 100vh;
+    grid-template-areas: ". icong ." ". susg ." ". leakg .";
+  }
+  .impala-nov .logo-music {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 7rem;
+    padding-bottom: 0;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+  .impala-nov .logo-music a img {
+    width: 11.5rem;
+    height: 11.5rem;
+  }
+  .impala-nov .impala-tour {
+    width: 0;
+    height: 60rem;
+  }
+  .impala-nov .impala-merch {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20vh 20vh 10vh 20vh 10vh;
+    grid-template-areas: " h3-merch h3-merch h3-merch " "merch-1 merch-3 merch-6 " ". . ." " merch-2 merch-4 merch-5  " " . button-merch  . ";
+  }
+  .impala-nov .impala-merch .merch-1 {
+    width: 25rem;
+    background-color: #9950B8;
+  }
+  .impala-nov .impala-merch .merch-2 {
+    width: 25rem;
+    background-color: #8B36A7;
+  }
+  .impala-nov .impala-merch .merch-3 {
+    width: 15rem;
+    background-color: #ED51C6;
+  }
+  .impala-nov .impala-merch .merch-4 {
+    width: 15rem;
+    background-color: #FF1493;
+  }
+  .impala-nov .impala-merch .merch-5 {
+    width: 15rem;
+    background-color: #DF41E9;
+  }
+  .impala-nov .impala-merch .merch-6 {
+    width: 15rem;
+    background-color: #D468E4;
+  }
+  .impala-nov .impala-merch .h3-merch {
+    margin-bottom: 15rem;
+  }
+  .impala-nov .impala-nov {
+    width: 0;
+    height: 120rem;
+  }
+}
+/*----------TABLET----------*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar .logo {
+    width: 13.25em;
+    height: 7.06em;
+  }
+  .navbar .menu a {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 1.1rem;
+  }
+  .navbar .impala-intro .introg {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .navbar .logo-music {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0;
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .navbar .logo-music a img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .navbar .impala-nov {
+    width: 0;
+    height: 110rem;
+  }
+  .navbar .impala-tour {
+    width: 0;
+    height: 100rem;
+  }
+  .merch-1 {
+    width: 22rem;
+    background-color: #9950B8;
+  }
+  .merch-2 {
+    width: 22rem;
+    background-color: #8B36A7;
+  }
+  .merch-3 {
+    width: 13rem;
+    background-color: #ED51C6;
+  }
+  .merch-4 {
+    width: 13rem;
+    background-color: #FF1493;
+  }
+  .merch-5 {
+    width: 13rem;
+    background-color: #DF41E9;
+  }
+  .merch-6 {
+    width: 13rem;
+    background-color: #D468E4;
+  }
+  .button-merch {
+    font-size: 1.5rem;
+    padding-top: 0;
+    padding-left: 1%;
+    padding-right: 2%;
+  }
+  .button-merch .pie-img {
+    width: 13.25em;
+    height: 7.06em;
+  }
+  .button-merch .pie-socialmedia a img {
+    width: 3.1rem;
+    height: 3.1rem;
+  }
+}
+/*----------SMARTPHONE----------*/
+@media (max-width: 576px) {
+  .impala-intro {
+    height: 70rem;
+    max-width: 576px;
+    grid-template-columns: repeat(1, 576px);
+    grid-template-rows: repeat(6, 15vh);
+    grid-template-areas: "cg" "cg" "cg" "introg " "introg " "introg ";
+  }
+  .impala-tour {
+    height: 130rem;
+    max-width: 576px;
+  }
+  .impala-merch {
+    height: 160rem;
+    max-width: 576px;
+    grid-template-columns: repeat(1, 576px);
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-template-areas: "h3-merch" "merch-1 " "merch-2 " "merch-3 " "merch-4 " "merch-5 " "merch-6 " "button-merch";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 7rem;
+  }
+  .merch-1 {
+    width: 20rem;
+    background-color: #9950B8;
+    max-width: 200px;
+  }
+  .merch-2 {
+    width: 20rem;
+    background-color: #8B36A7;
+    max-width: 200px;
+  }
+  .merch-3 {
+    width: 20rem;
+    background-color: #ED51C6;
+    max-width: 200px;
+  }
+  .merch-4 {
+    width: 20rem;
+    background-color: #FF1493;
+    max-width: 200px;
+  }
+  .merch-5 {
+    width: 20rem;
+    background-color: #DF41E9;
+  }
+  .merch-6 {
+    width: 20rem;
+    background-color: #D468E4;
+  }
+  .button-merch {
+    padding-left: 3rem;
+    padding-top: 0;
+    justify-content: center;
+    align-content: center;
+  }
+  .button-merch a {
+    padding-bottom: 10rem;
+    background: none;
+    border: 2px solid rgb(224, 210, 255);
+    border-radius: 3rem;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 0px 10px 0px rgb(224, 210, 255);
+    cursor: pointer;
+    font-weight: 30rem;
+    line-height: 2.2rem;
+  }
+  .button-merch a:hover {
+    box-shadow: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(243, 243, 243);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+  }
+  .pie-socialmedia a img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .logo-music a img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  /*Boton Hamburguesa*/
+  .navbar {
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .menu-bar {
+    display: block;
+    grid-column: 11/12;
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(90, 24, 154);
+  }
+  .navbar .menu a {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding: 2.2rem;
+  }
+  .navbar .menu {
+    position: absolute;
+    width: 100%;
+    height: 50rem;
+    display: grid;
+    align-items: center;
+    background-color: #7F7086;
+    margin-top: 59.1em;
+    transform: translateX(170%);
+    transition: all 1s;
+  }
+  .navbar .menu-toggle {
+    transform: translatex(40%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,48 @@
+/*______________________- Seccion Intro -______________________*/
+
+.impala-intro{
+  height: 50rem;
+
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../multimedia/background/bg1.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows:repeat(6, 15vh) ;
+  grid-template-areas: 
+  ".  .    .       introg introg introg"
+  "cg  cg    cg    introg introg introg"
+  "cg  cg    cg    introg introg introg"
+  "cg  cg    cg    introg introg introg"
+  "cg  cg    cg    introg introg introg"
+  ".  .    .       introg introg introg"
+
+  ;
+
+  .cg{
+    grid-area: cg;
+  }
+ /*-----Texto Principal-----*/
+  .introg{
+    grid-area: introg;
+    color: $mainColor;
+    @include orgSection (10rem,3rem,0,3rem,$mainFont,1.5rem,$textLight,2rem,justify,0,0,none);
+
+  }
+/*----Carousel----*/
+  .carousel{ 
+    overflow:hidden ;
+    img{
+      width: 100%;
+      min-height: 34rem;
+      max-height: 34rem;
+      object-fit: cover;
+    }
+  }
+}
+
 //novedades
+/*______________________- Seccion Novedades -______________________*/
 .impala-nov{
   height: 140rem;
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../multimedia/background/bg8.jpg);
@@ -12,80 +56,8 @@
   "susg susg susg"
   "leakg leakg leakg"
   ;
-    /*--- Logos Music ---*/
 
-  .logo-music{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 7rem;
-    padding-left: 15%;
-    padding-right: 15%;
-    a img{
-    width: 11.5rem;
-    height: 11.5rem;
-    }
-  }
-
-  /*--- Suscripcion ---*/
-
-  .suscription{
-    text-align: center;
-    line-height: 2rem;
-    font-weight: 400rem;
-    font-size: 1.4rem;
-    font-family: $secondaryFont;
-    padding-left: 15%;
-    padding-right: 15%;
-    color: $mainColor;
-    h3{
-    padding-bottom: 5%;
-    }
-    form {
-      label {
-      justify-content: center;
-      align-content: center;
-      padding-bottom: 8%;
-      padding-right: 15%;
-      padding-left: 15%;
-      }
-      .input-submit{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        padding-top: 8%;
-        padding-right: 15%;
-        padding-left: 15%;
-        .text-sub{
-          background-color: rgb(0, 1, 2);
-        }
-        .input-sub{
-          background-color: rgb(0, 1, 2);
-        }
-      }
-    }
-  }
-   /*--- New Leaks ---*/
-  .leakg{
-    .new-leak-text{
-    justify-content: center;
-    align-content: center;
-    padding-right: 15%;
-    padding-left: 15%;
-    }
-    .video-leak{
-      justify-content: center;
-      align-content: center;
-      overflow: hidden; 
-    }
-  }
-}
-
-  
- 
-
-/*--Grid Areas--*/
+  /*--Grid Areas--*/
 .icong{
   grid-area: icong;
 }
@@ -99,59 +71,97 @@
 }
 
 /*--*/
+    /*--- Logos Music ---*/
+
+  .logo-music{
+    @include ajustCenter(7rem,0,space-evenly);
+    a img{
+    width: 11.5rem;
+    height: 11.5rem;
+    }
+  }
+
+  /*--- Suscripcion ---*/
+
+  .suscription{
+    color: $mainColor;
+    @include orgSection (0,15%,0,15%,$secondaryFont,1.4rem,$textRegular,2rem,center,0,0,0);
+    h3{
+    padding-bottom: 5%;
+    }
+    form {
+      label {
+        @include ajustCenter(0,8%,center);
+      }
+      .input-submit{
+        @include ajustCenter(8%,0,center);
+        .text-sub{
+          background-color: rgb(0, 1, 2);
+        }
+        .input-sub{
+          background-color: rgb(0, 1, 2);
+        }
+      }
+    }
+  }
+   /*--- New Leaks ---*/
+  .leakg{
+    .new-leak-text{
+    @include ajustCenter(0,0,center);
+    }
+    .video-leak{
+      justify-content: center;
+      align-content: center;
+      overflow: hidden; 
+    }
+  }
+}
 
 /*______________________- Seccion Tour -______________________*/
+
 .impala-tour{
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
   background-size: cover;
   height: 80rem;
   .tourg{
-    text-align: justify;
-    line-height: 2.2rem;
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: 'Montserrat',sans-serif;
-    padding-top: 20%;
-    color: rgb(243, 243, 243);
-    #entradas{
-      color:rgb(243, 243, 243) ;
-      font-size: 1.5rem;
-      font-family: 'Montserrat',sans-serif;
-      text-transform: uppercase;
-      font-weight: bold;
-      &:hover{
-        color:rgb(224, 210, 255);
-      }
-    }
-    #button-tour{
-      padding-top: 10rem;
-      padding-left: 0.1rem;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    }
+    @include orgSection (20%,0,0,0,$mainFont,2rem,$textBold,2.2rem,justify,0,0, none);
   }
+}
+
+#entradas{
+  color:$mainColor ;
+  font-size: 1.5rem;
+  font-family: $mainFont;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover{
+    color:$secondaryColor;
+  }
+}
+#button-tour{
+  display: flex;
+  @include button(0.1rem,10rem);
 }
 
 /*______________________- Seccion Merch -______________________*/
 
 
 .impala-merch{
-  height: 100vh;
+  height: 90vh;
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../multimedia/background/bg5.jpg);
   background-size: cover;
   display: grid;
-  grid-gap: 3rem;
-  color:rgb(243, 243, 243) ;
+  
+  color:$mainColor ;
   font-size: 1.5rem;
-  font-family: 'Montserrat',sans-serif;
+  font-family: $mainFont;
   text-transform: uppercase;
   font-weight: bold;
 
   grid-template-columns: repeat(6, 1fr) ;
   grid-template-rows: 20vh 20vh 20vh 10vh 1vh;
   grid-template-areas:
-  ". . h3-merch h3-merch. ."
+  "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch"
   "merch-1 merch-1 merch-3 merch-4 merch-2 merch-2 "
   "merch-1 merch-1 merch-5 merch-6 merch-2 merch-2 "
   ". . . . . ."
@@ -159,323 +169,222 @@
 
   .h3-merch{
   grid-area: h3-merch;
-  padding-top: 10rem;
+  padding-top: 4rem;
   justify-content: center;
   text-align: center;
+  background: rgb(0,0,0);
+  width: 100%;
   }
   .merch-1{
-    grid-area: merch-1;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
+    background-color: #9950B8;
+    @include merchArea(merch-1,flex, center,center,center,center,100%);
     .container-text-merch{
       position: relative;
       .image-merch { 
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        &:hover{
-          opacity: 0.3;
-        }
-        .middle-merch {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-          &:hover{
-          opacity: 1;
-          }
-          .text-merch { 
-            white-space: pre-wrap;
-            color: white;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color:rgb(243, 243, 243) ;
-            font-size: 1.2rem;
-            font-family: 'Montserrat',sans-serif;
-            text-transform: uppercase;
-            font-weight: 400rem;
-          }
-        }
+        @include imageMerch(1,block,.5s ease,hidden,.3);
       }
-    }
+      .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1);
+          .text-merch { 
+            @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
+          }  
+      }
+    }   
   }
   .merch-2{
-    grid-area: merch-2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    background-color: #8B36A7;
+    @include merchArea(merch-2,flex, center,center,center,center,100%);
     .container-text-merch{
       position: relative;
       .image-merch { 
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        &:hover{
-          opacity: 0.3;
-        }
-        .middle-merch {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-          &:hover{
-          opacity: 1;
-          }
-          .text-merch { 
-            white-space: pre-wrap;
-            color: white;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color:rgb(243, 243, 243) ;
-            font-size: 1.2rem;
-            font-family: 'Montserrat',sans-serif;
-            text-transform: uppercase;
-            font-weight: 400rem;
-          }
-        }
+        @include imageMerch(1,block,.5s ease,hidden,.3);
+      }
+      .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1);
+      }
+      .text-merch { 
+        @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
       }
     }
   }
-
   .merch-3{
-    grid-area: merch-3;
-    width: 100%;
+    background-color: #ED51C6;
     padding-bottom: 30%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    @include merchArea(merch-3,flex, center,center,center,center,100%);
     .container-text-merch{
       position: relative;
       .image-merch { 
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        &:hover{
-          opacity: 0.3;
-        }
-        .middle-merch {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-          &:hover{
-          opacity: 1;
-          }
-          .text-merch { 
-            white-space: pre-wrap;
-            color: white;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color:rgb(243, 243, 243) ;
-            font-size: 1.2rem;
-            font-family: 'Montserrat',sans-serif;
-            text-transform: uppercase;
-            font-weight: 400rem;
-          }
-        }
+        @include imageMerch(1,block,.5s ease,hidden,.3);
+      }
+      .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1)
+      }
+      .text-merch { 
+        @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
       }
     }
   }
-
   .merch-4{
-    grid-area: merch-4;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    background-color: #DF41E9;
+    @include merchArea(merch-4,flex, center,center,center,center,100%);
     .container-text-merch{
       position: relative;
       .image-merch { 
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        &:hover{
-          opacity: 0.3;
-        }
-        .middle-merch {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-          &:hover{
-          opacity: 1;
-          }
-          .text-merch { 
-            white-space: pre-wrap;
-            color: white;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color:rgb(243, 243, 243) ;
-            font-size: 1.2rem;
-            font-family: 'Montserrat',sans-serif;
-            text-transform: uppercase;
-            font-weight: 400rem;
-          }
-        }
+        @include imageMerch(1,block,.5s ease,hidden,.3);
+      }
+      .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1)
+      }
+      .text-merch { 
+        @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
       }
     }
   }
-
   .merch-5{
+    background-color: #FF1493;
     grid-area: merch-5;
     .container-text-merch{
       position: relative;
       .image-merch { 
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        &:hover{
-          opacity: 0.3;
-        }
-        .middle-merch {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-          &:hover{
-          opacity: 1;
-          }
-          .text-merch { 
-            white-space: pre-wrap;
-            color: white;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color:rgb(243, 243, 243) ;
-            font-size: 1.2rem;
-            font-family: 'Montserrat',sans-serif;
-            text-transform: uppercase;
-            font-weight: 400rem;
-          }
-        }
+        @include imageMerch(1,block,.5s ease,hidden,.3);
+      }
+      .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1)
+      }
+      .text-merch { 
+        @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
       }
     }
   }
-
   .merch-6{
+    background-color: #9950B8;
     grid-area: merch-6;
     padding-top: 50em;
     .container-text-merch{
       position: relative;
       .image-merch { 
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        &:hover{
-          opacity: 0.3;
-        }
-        .middle-merch {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-          &:hover{
-          opacity: 1;
-          }
-          .text-merch { 
-            white-space: pre-wrap;
-            color: white;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color:rgb(243, 243, 243) ;
-            font-size: 1.2rem;
-            font-family: 'Montserrat',sans-serif;
-            text-transform: uppercase;
-            font-weight: 400rem;
-          }
-        }
+        @include imageMerch(1,block,.5s ease,hidden,.3);
+      }
+      .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,(translate(-50%, -50%)),(translate(-50%, -50%)),center,1)
+      }
+      .text-merch { 
+        @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
       }
     }
   }
 
   .button-merch{
     grid-area: button-merch;
-    padding-left: 31%;
-    justify-content: center;
-    align-content: center;
-    .button-merch a {
-      padding-bottom: 10rem;
-      background: none;
-      border: 2px solid rgb(224, 210, 255);
-      border-radius: 3rem;
-      color: white;
-      padding: 1rem 2.5rem;
-      font-size: 1.8rem;
-      font-family: 'Montserrat' ,sans-serif;
-      box-shadow: 0px 0px 10px 0px rgb(224, 210, 255);
-      cursor: pointer;
-      font-weight: 30rem;
-      line-height: 2.2rem;
+    @include button(0%,0);
+  }
+
+
+  .zoom{
+    transition: transform 0.2s; 
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+/*__________ Discografia*_____________*/
+
+.discs{
+
+  display:grid;
+  grid-template-rows: 10rem 30rem 30rem 50rem;
+  grid-gap: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-areas: 
+  "h1-d h1-d h1-d"
+  "disc-1 disc-2 disc-3"
+  "disc-4 disc-5 disc-6"
+  "disc-7 disc-8 ."
+  ;
+
+
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0,0,0,1);
+  
+  .image-merch { 
+    @include imageMerch(1,block,.5s ease,hidden,1);
+  }
+  .middle-merch {
+        @include middleMerch(.5s ease,0,absolute,50%,50%,(translate(-50%, -50%)),(translate(-50%, -50%)),center,2)
+      }
+  .text-merch { 
+        @include textMerch(pre-wrap,$mainColor,absolute,0,50%,50%,translate(-50%, -50%),translate(-50%, -50%),2rem,$mainFont,uppercase,$textBold);
+        font-weight: $textBold;
+      }
+    img{
+      max-width: 300px;
+      min-width: 299px;
+      height: 300px;
+     }
+    .zoom{
+      transition: transform 0.5as; 
       &:hover{
-        box-shadow: none;
-        background-color: black;
-        color: #fff;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+        transform: scale(1.1);
       }
     }
-  }  
+  }
 }
+
+.h1-d{
+   grid-area:h1-d;
+}
+.disc-1{
+   grid-area:disc-1;
+}
+.disc-2{
+   grid-area:disc-2;
+}
+
+.disc-3{
+   grid-area:disc-3;
+}
+.disc-4{
+   grid-area:disc-4;
+}
+
+.disc-5{
+   grid-area:disc-5;
+}
+
+.disc-6{
+   grid-area:disc-6;
+}
+
+.disc-7{
+   grid-area:disc-7;
+}
+
+.disc-8{
+   grid-area:disc-8;
+}
+
+/*______________________- Footer -______________________*/
+
+.footerg{
+ @include orgSection (7em,0,7em,0,$mainFont,1.1rem,$textLight,0,0,space-around,center, rgb(0,0,0));
+}
+
+
+.pie-img{
+  width: 17.25em;
+  height: 9.06em;
+ }
+
+ .pie-socialmedia a img{
+  justify-items: space-evenly;
+  width: 4em;
+  height: 4em; 
+  background-color: $secondaryColor;
+ }
+

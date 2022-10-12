@@ -1,0 +1,301 @@
+//media
+/* Media Queries */
+
+/*----------DESKTOP-SM----------*/
+@include desktop-sm{
+	.navbar .menu{
+    padding: 4rem 2rem 4rem 2rem;
+    a{
+  		font-size: 1.5rem;
+      line-height: 2.2rem;
+      padding: 2rem;
+  	}
+	}
+    
+  .impala-intro{
+    	grid-area:
+    	 	".  .    .       . . ."
+			  "cg  cg    cg    introg introg introg"
+			  "cg  cg    cg    introg introg introg"
+			  "cg  cg    cg    introg introg introg"
+			  "cg  cg    cg    introg introg introg"
+			  ".  .    .       . . .";
+	    .introg{
+	  		@include sectionpos (1.3rem,7rem,2rem,2rem);
+	  	}
+
+  	}
+  	
+
+  	.impala-nov{
+		  height: 120rem;
+		  grid-template-columns: repeat(3, 1fr) ;
+		  grid-template-rows: 40vh 60vh 100vh;
+		  grid-template-areas: 
+		  ". icong ."
+		  ". susg ."
+		  ". leakg .";
+	  .logo-music{
+	    @include ajustCenter(7rem,0,space-evenly);
+	    a img{
+		    width: 11.5rem;
+		    height: 11.5rem;
+	    }
+ 		}
+  	
+  	.impala-tour{
+  		@include sizing (0,60rem);
+  	}
+
+  	.impala-merch{
+  		grid-template-columns: repeat(3, 1fr) ;
+  		grid-template-rows: 20vh 20vh 10vh 20vh 10vh;
+  		grid-template-areas:
+		 " h3-merch h3-merch h3-merch "
+		 "merch-1 merch-3 merch-6 "
+		 ". . ."
+		 " merch-2 merch-4 merch-5  "
+		 " . button-merch  . ";
+			.merch-1{
+	  		@include mediamerch(25rem, #9950B8);
+  		}
+
+  		.merch-2{
+	  		@include mediamerch(25rem, #8B36A7);
+  		}
+
+  		.merch-3{
+	  		@include mediamerch(15rem, #ED51C6);
+  		}
+
+  		.merch-4{
+	  		@include mediamerch(15rem, #FF1493);
+  		}
+
+  		.merch-5{
+	  		@include mediamerch(15rem, #DF41E9);
+  		}
+
+  		.merch-6{
+	  		@include mediamerch(15rem, #D468E4);
+  		}
+
+  		.h3-merch{		
+  			margin-bottom: 15rem;
+  		}
+		}
+  	
+	.impala-nov{
+  		@include sizing (0,120rem);
+  	}
+
+
+}
+
+
+}
+	
+/*----------TABLET----------*/
+
+
+@include tablet{
+	.navbar{
+		.logo{
+      @include sizing (13.25em,7.06em);
+  	}
+		.menu {
+			a{
+				font-size: 1.3rem;
+	      line-height: 2rem;
+	      padding: 1.1rem;
+			}
+    }
+
+
+    .impala-intro .introg{
+  		@include sectionpos (1.2rem,3rem,1rem,1rem);
+  	}
+
+  	.logo-music{
+	 		display: flex;
+	  	flex-direction: row;
+ 			justify-content: space-evenly;
+ 			align-items: center;
+			@include sectionpos (0,7rem,10%,10%);
+
+		}
+  	.logo-music a img{
+ 			@include sizing (7.5rem,7.5rem);
+		}
+		
+		.impala-nov{
+  		@include sizing (0,110rem);
+  	}
+
+		.impala-tour{
+  		@include sizing (0,100rem);
+  	}
+
+  	
+  
+    }
+    .merch-1{
+ 			@include mediamerch(22rem, #9950B8);
+  	}
+
+  	.merch-2{
+  		@include mediamerch(22rem, #8B36A7);
+  	}
+
+  	.merch-3{
+  		@include mediamerch(13rem, #ED51C6);
+  	}
+
+  	.merch-4{
+  		@include mediamerch(13rem, #FF1493);
+  	}
+
+  	.merch-5{
+  		@include mediamerch(13rem, #DF41E9);
+  	}
+
+  	.merch-6{
+  		@include mediamerch(13rem, #D468E4);
+  	}
+  	  .button-merch {
+  		@include sectionpos (1.5rem,0,1%,2%);
+
+  	.pie-img{
+  		@include sizing (13.25em,7.06em);
+    }
+    .pie-socialmedia a img{
+    	@include sizing (3.1rem,3.1rem);
+    }
+
+}
+
+}
+
+
+/*----------SMARTPHONE----------*/
+
+
+@include smartphone{	
+	.impala-intro{
+	height: 70rem;
+	max-width: 576px;
+  grid-template-columns:repeat(1, 576px);
+  grid-template-rows:repeat(6, 15vh) ;
+  grid-template-areas: 
+  "cg"
+  "cg"
+  "cg"
+  "introg "
+  "introg "
+  "introg "
+  ;
+}
+.impala-tour{
+  height: 130rem;
+	max-width: 576px;
+
+ }
+.impala-merch{
+  height: 160rem;
+	max-width: 576px;
+  grid-template-columns: repeat(1, 576px) ;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+  grid-template-areas:
+  "h3-merch" 
+  "merch-1 "
+  "merch-2 "
+  "merch-3 "
+  "merch-4 "
+  "merch-5 "
+  "merch-6 "
+  "button-merch";
+  justify-items: center;
+  align-items: center;
+  grid-gap: 7rem;
+
+}
+
+	.merch-1{
+ 			@include mediamerch(20rem, #9950B8);
+ 			max-width: 200px;
+  	}
+
+  	.merch-2{
+  		@include mediamerch(20rem, #8B36A7);
+  			max-width: 200px;
+  	}
+
+  	.merch-3{
+  		@include mediamerch(20rem, #ED51C6);
+  			max-width: 200px;
+  	}
+
+  	.merch-4{
+  		@include mediamerch(20rem, #FF1493);
+  			max-width: 200px;
+  	}
+
+  	.merch-5{
+  		@include mediamerch(20rem, #DF41E9);
+  	}
+
+  	.merch-6{
+  		@include mediamerch(20rem, #D468E4);
+  	}
+	  .button-merch{
+	  	@include button(3rem,0);
+	  }
+
+  
+  	.pie-socialmedia a img{
+    	@include sizing (2.5rem,2.5rem);
+    }
+    .logo-music a img{
+  		@include sizing (6.5rem,6.5rem);
+		}
+
+	/*Boton Hamburguesa*/
+
+		.navbar {
+			position: relative;
+			z-index:1;
+		}
+
+		.navbar .menu-bar{
+			display: block;
+			grid-column: 11/12;
+			font-size: 3rem;
+			cursor: pointer;
+			color:$navColor;
+			
+
+		}
+
+		.navbar .menu a{
+	    font-size: 2rem;
+	    line-height: 2.4rem;
+	    padding: 2.2rem;
+	   }
+		.navbar .menu{
+			position: absolute;
+			@include sizing (100%, 50rem);
+			display: grid;
+			align-items: center;
+			background-color:#7F7086;
+			margin-top: 59.1em;
+			transform: translateX(170%);
+			transition: all 1s;
+
+
+		}
+
+		.navbar .menu-toggle{
+			transform: translatex(40%);
+		}
+	}
+

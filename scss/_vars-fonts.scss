@@ -9,3 +9,23 @@ $secondaryFont: 'Work Sans', sans-serif;
 $textRegular: 400rem;
 $textLight: 300rem;
 $textBold: 700rem;
+
+
+
+//vars globales
+
+$mainColor:rgb(243, 243, 243);
+$secondaryColor:rgb(224, 210, 255);
+$navColor:rgb(90, 24, 154);
+$bgColor:rgb(16, 0, 43);
+
+//sizing
+$w-100:100%;
+$vh-100: 100vh;
+
+
+//media
+$smartphone: (max-width: 576px);  
+$tablet: (min-width: 576px) and (max-width:768px);  
+$desktop-sm: (min-width: 768px) and (max-width:992px);
+$desktop-md: (min-width: 992px) and (max-width:1200px);
