@@ -98,9 +98,19 @@ h4 {
   display: none;
 }
 
+header {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 10px 0;
+}
+
 /*______________________- Seccion Intro -______________________*/
 .impala-intro {
   height: 50rem;
+  width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg1.jpg);
   background-size: cover;
   max-width: 100%;
@@ -770,6 +780,10 @@ h4 {
 
 /* Media Queries */
 /*----------DESKTOP-SM----------*/
+body {
+  overflow-x: hidden;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar .menu {
     padding: 4rem 2rem 4rem 2rem;
@@ -929,6 +943,9 @@ h4 {
 }
 /*----------SMARTPHONE----------*/
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .impala-intro {
     height: 70rem;
     max-width: 576px;

@@ -2,8 +2,12 @@
 /* Media Queries */
 
 /*----------DESKTOP-SM----------*/
+body{
+	overflow-x: hidden;
+}
 @include desktop-sm{
 	.navbar .menu{
+		
     padding: 4rem 2rem 4rem 2rem;
     a{
   		font-size: 1.5rem;
@@ -181,19 +185,24 @@
 
 
 @include smartphone{	
+
+	body{
+
+  	overflow-x: hidden;
+	}
 	.impala-intro{
-	height: 70rem;
-	max-width: 576px;
-  grid-template-columns:repeat(1, 576px);
-  grid-template-rows:repeat(6, 15vh) ;
-  grid-template-areas: 
-  "cg"
-  "cg"
-  "cg"
-  "introg "
-  "introg "
-  "introg "
-  ;
+		height: 70rem;
+		max-width: 576px;
+	  grid-template-columns:repeat(1, 576px);
+	  grid-template-rows:repeat(6, 15vh) ;
+	  grid-template-areas: 
+	  "cg"
+	  "cg"
+	  "cg"
+	  "introg "
+	  "introg "
+	  "introg "
+	  ;
 }
 .impala-tour{
   height: 130rem;
