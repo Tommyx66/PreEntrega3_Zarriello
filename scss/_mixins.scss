@@ -167,3 +167,8 @@
 		@content; 
 	}
 }
+@mixin desktop-md { 
+	@media (min-width: 992px) and (max-width:1900px){
+		@content; 
+	}
+}
