@@ -2,23 +2,18 @@
   margin: 0;
   padding: 0;
 }
-
-
 html{
   font-size: 62.5%;
 }
-
 body{
   background-color: rgb(16, 0, 43);
   background-attachment: fixed;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Work Sans', sans-serif;
 }
-
- a{ 
+a{ 
  text-decoration: none; 
 }
-
 h1{
   color:rgb(243, 243, 243) ;
   font-family: 'Montserrat',sans-serif;
@@ -26,7 +21,6 @@ h1{
   text-transform: uppercase;
   font-weight: bold;
 }
-
 h2{
   color:rgb(243, 243, 243) ;
   font-size: 3.5rem;
@@ -34,7 +28,6 @@ h2{
   text-transform: uppercase;
   font-weight: 400rem;
 }
-
 h3{
   color:rgb(243, 243, 243) ;
   font-size: 2.2rem;
@@ -42,7 +35,6 @@ h3{
   text-transform: uppercase;
   font-weight: bold;
 }
-
 h4{
   color:rgb(243, 243, 243) ;
   font-size: 1.5rem;
@@ -50,8 +42,6 @@ h4{
   text-transform: uppercase;
   font-weight: bold;
 }
-
-
 #grid-container{
   display:grid;
   width: 100%;
