@@ -8,16 +8,16 @@
 	.navbar{
 		.logo{
 			img{
-				width: 13rem;
-				height: 7rem;
-				padding-right: 2rem;
-				padding-top: .5rem;
+				width: 20rem;
+				height: auto;
+				padding-left: 4rem;
+				padding-top: .3rem;
 			}
 		}
 		.menu{
 			padding: 4rem 4rem 4rem 8rem;
 			a{
-				font-size: .8rem;
+				font-size: 1rem;
 				line-height: 1.8rem;
 				padding: 1rem;
 			}
@@ -29,21 +29,21 @@
 	.impala-intro{
 		grid-template-areas: 
 		".  .    .       . . ."
-		". .   introg    introg introg introg"
-		"cg  cg    introg    introg introg introg"
-		"cg  cg    introg    introg introg introg"
-		"cg  cg    introg    introg introg introg"
+		"cg  cg   cg    introg introg introg"
+		"cg  cg    cg    introg introg introg"
+		"cg  cg    cg    introg introg introg"
+		"cg    cg   cg    introg introg introg"
 		".  .    .       . . .";
 		
 		.introg{
-			@include sectionpos (1.3rem,7rem,1rem,1rem);
+			@include sectionpos (1.8rem,7rem,1rem,1rem);
 		}
 		/*----Carousel----*/
 		.carousel-inner{ 
 			img{
 				width: 100%;
-				min-height: 30rem;
-				max-height: 30rem;
+				min-height: auto;
+				max-height: auto;
 				padding-left: 2rem;
 				padding-right: 2rem;
 				object-fit: cover;
@@ -53,7 +53,7 @@
 	
 	.impala-nov{
 		width: 100%;
-		height: 93rem;
+		height: auto;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: 40vh 60vh 100vh;
 		grid-template-areas: 
@@ -70,7 +70,7 @@
 		}
 	}
 	.impala-tour{
-		height: 90rem;
+		height: auto;
 		grid-template-columns:repeat (2, 1fr);
 		grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
 		grid-template-areas:
@@ -78,49 +78,56 @@
 		"tourg1 tourg2"
 		"tourg3 tourg4"
 		"tourg5 tourg6"
-		"button-tour button-tour"
+		"button-tour button-tour";
+		}
 	}
 	.impala-merch{
-		height: 90rem;
-		grid-template-columns: repeat(6, 1fr) ;
+		height: auto;
+		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
 		grid-template-areas:
-		"h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch"
-		". . . . . ."
-		"merch-1  . merch-3 . merch-6 ."
-		" merch-2 . merch-4 . merch-5 ."
-		" . . . . . ."
-		" . . button-merch . . .";
+		"h3-merch h3-merch h3-merch"
+		".   . . "
+		"merch-1   merch-3  merch-6 "
+		" merch-2  merch-4  merch-5 "
+		" . . . "
+		" . button-merch .";
 		.merch-1{
-			@include mediamerch(25rem, #9950B8);
-			padding-left: 2rem;
-			margin-top: 2rem
+			@include mediamerch(15rem, #9950B8);
+			margin-top: 2rem;
+			margin:auto;
+			justify-content:center;
+			align-items:center;
 		}
 		.merch-2{
-			@include mediamerch(25rem, #8B36A7);
+			@include mediamerch(15rem, #8B36A7);
 			margin-top: 2rem;
-			margin-left: 1rem;
+			margin:auto;
 		}
 		.merch-3{
 			@include mediamerch(15rem, #ED51C6);
-			margin-top: 2rem
+			margin-top: 2rem;
+			margin:auto;
 		}
 		.merch-4{
 			@include mediamerch(15rem, #FF1493);
-			margin-top: 2rem
+			margin-top: 2rem;
+			margin:auto;
 		}
 		.merch-5{
 			@include mediamerch(15rem, #DF41E9);
 			margin-top: 2rem;
+			margin:auto;;
 		}
 		.merch-6{
 			@include mediamerch(15rem, #D468E4);
-			margin-top: 2rem
+			margin-top: 2rem;
+			margin:auto;
 		}
 	}
 	/*ComunidadPage*/
 	.communitypage{
-		@include gridPage(url(../multimedia/background/bg8.jpg),100rem,repeat(1,1fr),10vh 40vh 80vh, 
+		@include gridPage(url(../multimedia/background/bg8.jpg),auto,repeat(1,1fr),30vh 40vh 80vh, 
 			"."
 			"h1-com"
 			"susg");
@@ -154,7 +161,7 @@
 	}
 	/*DiscografíaPage*/
 	#discs{
-		@include gridPage(url(../multimedia/background/bg6.jpg),120rem,repeat(3,1fr),40vh 30vh 55vh 55vh 55vh  38vh, 
+		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(3,1fr),40vh 30vh 55vh 55vh 55vh  38vh, 
 			". . ."
 			"h1-d h1-d h1-d"
 			"disc-1 disc-2 disc-3"
@@ -191,7 +198,7 @@
 	}
 	/*TourPage*/
 	#tourpage{
-		@include gridPage(url(../multimedia/background/bg3.jpg),100rem,repeat(1,1fr),0vh 30vh 50vh 50vh 10vh, 
+		@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(1,1fr),15vh 30vh 50vh 50vh 10vh, 
 			". . ."
 			"h3-tour h3-tour h3-tour"
 			"tourg1 tourg2 tourg3"
@@ -206,7 +213,7 @@
 	}
 	/*MerchPage*/
 	#merchpage{
-		@include gridPage(url(../multimedia/background/bg5.jpg),80rem,repeat(3,1fr),10vh 30vh 50vh 50vh, 
+		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(3,1fr),10vh 30vh 50vh 50vh, 
 			". . ."
 			"h3-merch h3-merch h3-merch"
 			"merch-1 merch-2 merch-3 "
@@ -214,8 +221,37 @@
 			);
 		grid-gap: 0rem;
 		
-		.merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
+		.merch-1{
+			@include mediamerch(15rem, #9950B8);
+			margin-top: 2rem;
+			margin:auto;
 			justify-content:center;
+			align-items:center;
+		}
+		.merch-2{
+			@include mediamerch(15rem, #8B36A7);
+			margin-top: 2rem;
+			margin:auto;
+		}
+		.merch-3{
+			@include mediamerch(15rem, #ED51C6);
+			margin-top: 2rem;
+			margin:auto;
+		}
+		.merch-4{
+			@include mediamerch(15rem, #FF1493);
+			margin-top: 2rem;
+			margin:auto;
+		}
+		.merch-5{
+			@include mediamerch(15rem, #DF41E9);
+			margin-top: 2rem;
+			margin:auto;;
+		}
+		.merch-6{
+			@include mediamerch(15rem, #D468E4);
+			margin-top: 2rem;
+			margin:auto;
 		}
 		.button-merch{
 			display: none;
@@ -225,7 +261,7 @@
 		}
 	}
 	
-}
+
 /*----------DESKTOP-SM----------*/
 @include desktop-sm{
 	body{
@@ -235,7 +271,7 @@
 		.logo{
 			img{
 				width: 13rem;
-				height: 7rem;
+				height: auto;
 				padding-right: 2rem;
 				padding-top: .5rem;
 			}
@@ -279,7 +315,7 @@
 	
 	.impala-nov{
 		width: 100%;
-		height: 93rem;
+		height: auto;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: 40vh 60vh 100vh;
 		grid-template-areas: 
@@ -296,7 +332,7 @@
 		}
 	}
 	.impala-tour{
-		height: 90rem;
+		height: auto;
 		grid-template-columns:repeat (2, 1fr);
 		grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
 		grid-template-areas:
@@ -307,7 +343,7 @@
 		"button-tour button-tour"
 	}
 	.impala-merch{
-		height: 90rem;
+		height: auto;
 		grid-template-columns: repeat(6, 1fr) ;
 		grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
 		grid-template-areas:
@@ -346,7 +382,7 @@
 	}
 	/*ComunidadPage*/
 	.communitypage{
-		@include gridPage(url(../multimedia/background/bg8.jpg),100rem,repeat(1,1fr),10vh 40vh 80vh, 
+		@include gridPage(url(../multimedia/background/bg8.jpg),auto,repeat(1,1fr),10vh 40vh 80vh, 
 			"."
 			"h1-com"
 			"susg");
@@ -380,7 +416,7 @@
 	}
 	/*DiscografíaPage*/
 	#discs{
-		@include gridPage(url(../multimedia/background/bg6.jpg),120rem,repeat(3,1fr),40vh 30vh 55vh 55vh 55vh  38vh, 
+		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(3,1fr),40vh 30vh 55vh 55vh 55vh  38vh, 
 			". . ."
 			"h1-d h1-d h1-d"
 			"disc-1 disc-2 disc-3"
@@ -417,7 +453,7 @@
 	}
 	/*TourPage*/
 	#tourpage{
-		@include gridPage(url(../multimedia/background/bg3.jpg),100rem,repeat(1,1fr),0vh 30vh 50vh 50vh 10vh, 
+		@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(1,1fr),0vh 30vh 50vh 50vh 10vh, 
 			". . ."
 			"h3-tour h3-tour h3-tour"
 			"tourg1 tourg2 tourg3"
@@ -474,7 +510,7 @@
 	
 	
 	.impala-intro{
-		height: 46rem;
+		height: auto;
 		grid-template-rows: repeat(7,15vh);
 		grid-template-areas: 
 		".  		.  	   .      	 . 				. 			."
@@ -502,7 +538,7 @@
 	}
 	.impala-nov{
 		width: 100%;
-		height: 120rem;
+		height: auto;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: 80vh 100vh 100vh;
 		grid-template-areas: 
@@ -519,7 +555,7 @@
 		}
 	}
 	.impala-tour{
-		height: 110rem;
+		height: auto;
 		grid-template-columns:repeat (2, 1fr);
 		grid-template-rows: 20vh 50vh 50vh 50vh 35vh;
 		grid-template-areas:
@@ -530,7 +566,7 @@
 		"button-tour button-tour"
 	}
 	.impala-merch{
-		height: 110rem;
+		height: auto;
 		grid-template-columns: repeat(2, 1fr) ;
 		grid-template-rows: 20vh 10vh 40vh 40vh 40vh 10vh 10vh;
 		grid-template-areas:
@@ -626,7 +662,7 @@
 	}
 	/*DiscografíaPage*/
 	#discs{
-		@include gridPage(url(../multimedia/background/bg6.jpg),125rem,repeat(2,1fr),70vh 25vh 55vh 55vh 55vh 55vh 38vh, 
+		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(2,1fr),70vh 25vh 55vh 55vh 55vh 55vh 38vh, 
 			". ."
 			"h1-d h1-d"
 			"disc-1 disc-2"
@@ -664,7 +700,7 @@
 	}
 	/*TourPage*/
 	#tourpage{
-		@include gridPage(url(../multimedia/background/bg3.jpg),100rem,repeat(2,1fr),20vh 40vh 50vh 50vh 50vh, 
+		@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(2,1fr),20vh 40vh 50vh 50vh 50vh, 
 			". ."
 			"h3-tour h3-tour"
 			"tourg1 tourg2"
@@ -680,7 +716,7 @@
 	}
 	/*MerchPage*/
 	#merchpage{
-		@include gridPage(url(../multimedia/background/bg5.jpg),130rem,repeat(2,1fr),14vh 50vh 50vh 50vh 50vh 30vh, 
+		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(2,1fr),14vh 50vh 50vh 50vh 50vh 30vh, 
 			". ."
 			"h3-merch h3-merch"
 			"merch-1 merch-2"
@@ -710,7 +746,7 @@
 		width: 100%;
 	}
 	.impala-intro{
-		height: 70rem;
+		height: auto;
 		grid-template-columns:repeat(1, 576px);
 		grid-template-rows:repeat(7, 24vh) ;
 		grid-template-areas: 
@@ -739,7 +775,7 @@
 	}
 	.impala-nov{
 		width: 100%;
-		height: 110rem;
+		height: auto;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: 80vh 100vh 100vh;
 		grid-template-areas: 
@@ -762,7 +798,7 @@
 		}
 	}
 	.impala-tour{
-		height: 170rem;
+		height: auto;
 		grid-template-columns:repeat (1, 1fr);
 		grid-template-rows: 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
 		grid-template-areas:
@@ -777,7 +813,7 @@
 	}
 	.impala-merch{
 		width: 100%;
-		height: 215rem;
+		height: auto;
 		grid-template-columns: repeat(1, 1fr) ;
 		grid-template-rows: 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
 		grid-template-areas:
@@ -830,14 +866,14 @@
 			"footer-text");
 		.pie-img{
 			grid-area: pie-img;
-			@include sizing (25rem,15rem);
+			@include sizing (25rem,auto);
 		}
 		.pie-socialmedia{
 			grid-area:pie-socialmedia;
 			max-width: 6rem;
 			a {
 				img{
-					@include sizing (5rem,5rem);
+					@include sizing (5rem,auto);
 				}
 			}
 		}
@@ -855,11 +891,11 @@
 	
 	.logo-music a img{
 		grid-area:logo-music;
-		@include sizing (6.5rem,6.5rem);
+		@include sizing (6.5rem,auto);
 	}
 	/*ComunidadPage*/
 	.communitypage{
-		@include gridPage(url(../multimedia/background/bg8.jpg),110rem,repeat(1,1fr),30vh 50vh 10vh, 
+		@include gridPage(url(../multimedia/background/bg8.jpg),auto,repeat(1,1fr),30vh 50vh 10vh, 
 			"."
 			"h1-com"
 			"susg");
@@ -893,7 +929,7 @@
 	}
 	/*DiscografíaPage*/
 	#discs{
-		@include gridPage(url(../multimedia/background/bg6.jpg),250rem,repeat(1,1fr),10vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh, 
+		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(1,1fr),10vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh, 
 			"."
 			"h1-d"
 			"disc-1"
@@ -934,7 +970,7 @@
 	}
 	/*TourPage*/
 	#tourpage{
-		@include gridPage(url(../multimedia/background/bg3.jpg),170rem,repeat(1,1fr),15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh, 
+		@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(1,1fr),15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh, 
 			"."
 			"h3-tour"
 			"tourg1"
@@ -947,7 +983,7 @@
 	}
 	/*MerchPage*/
 	#merchpage{
-		@include gridPage(url(../multimedia/background/bg5.jpg),170rem,repeat(1,1fr),14vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh, 
+		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(1,1fr),14vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh, 
 			"."
 			"h3-merch"
 			"merch-1"
@@ -958,8 +994,37 @@
 			"merch-6");
 		grid-gap: 0rem;
 		
-		.merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
+		.merch-1{
+			@include mediamerch(15rem, #9950B8);
+			margin-top: 2rem;
+			margin:auto;
 			justify-content:center;
+			align-items:center;
+		}
+		.merch-2{
+			@include mediamerch(15rem, #8B36A7);
+			margin-top: 2rem;
+			margin:auto;
+		}
+		.merch-3{
+			@include mediamerch(15rem, #ED51C6);
+			margin-top: 2rem;
+			margin:auto;
+		}
+		.merch-4{
+			@include mediamerch(15rem, #FF1493);
+			margin-top: 2rem;
+			margin:auto;
+		}
+		.merch-5{
+			@include mediamerch(15rem, #DF41E9);
+			margin-top: 2rem;
+			margin:auto;;
+		}
+		.merch-6{
+			@include mediamerch(15rem, #D468E4);
+			margin-top: 2rem;
+			margin:auto;
 		}
 		.button-merch{
 			display: none;
@@ -981,7 +1046,7 @@
 		}
 		.menu{
 			position: absolute;
-			@include sizing (100%, 50rem);
+			@include sizing (100%, auto);
 			display: grid;
 			align-items: center;
 			background-color:#7F7086;

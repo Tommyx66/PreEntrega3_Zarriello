@@ -930,40 +930,40 @@ body {
     overflow-x: hidden;
   }
   .navbar .logo img {
-    width: 13rem;
-    height: 7rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
+    width: 20rem;
+    height: auto;
+    padding-left: 4rem;
+    padding-top: 0.3rem;
   }
   .navbar .menu {
     padding: 4rem 4rem 4rem 8rem;
   }
   .navbar .menu a {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     padding: 1rem;
   }
   .impala-intro {
-    grid-template-areas: ".  .    .       . . ." ". .   introg    introg introg introg" "cg  cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" ".  .    .       . . .";
+    grid-template-areas: ".  .    .       . . ." "cg  cg   cg    introg introg introg" "cg  cg    cg    introg introg introg" "cg  cg    cg    introg introg introg" "cg    cg   cg    introg introg introg" ".  .    .       . . .";
     /*----Carousel----*/
   }
   .impala-intro .introg {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     padding-top: 7rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .impala-intro .carousel-inner img {
     width: 100%;
-    min-height: 30rem;
-    max-height: 30rem;
+    min-height: auto;
+    max-height: auto;
     padding-left: 2rem;
     padding-right: 2rem;
     object-fit: cover;
   }
   .impala-nov {
     width: 100%;
-    height: 93rem;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 40vh 60vh 100vh;
     grid-template-areas: ". icong ." ". susg ." ". leakg .";
@@ -984,299 +984,345 @@ body {
     padding: 0.5rem;
   }
   .impala-tour {
-    height: 90rem;
+    height: auto;
     grid-template-columns: repeat 2, 1fr;
     grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
     grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
   }
-  .impala-merch {
-    height: 90rem;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
-    grid-template-areas: "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch" ". . . . . ." "merch-1  . merch-3 . merch-6 ." " merch-2 . merch-4 . merch-5 ." " . . . . . ." " . . button-merch . . .";
-  }
-  .impala-merch .merch-1 {
-    width: 25rem;
-    background-color: #9950B8;
-    padding-left: 2rem;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-2 {
-    width: 25rem;
-    background-color: #8B36A7;
-    margin-top: 2rem;
-    margin-left: 1rem;
-  }
-  .impala-merch .merch-3 {
-    width: 15rem;
-    background-color: #ED51C6;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-4 {
-    width: 15rem;
-    background-color: #FF1493;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-5 {
-    width: 15rem;
-    background-color: #DF41E9;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-6 {
-    width: 15rem;
-    background-color: #D468E4;
-    margin-top: 2rem;
-  }
-  /*ComunidadPage*/
-  .communitypage {
-    display: grid;
-    justify-items: center;
-    align-content: space-evenly;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
-    background-size: cover;
-    height: 100rem;
-    grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 10vh 40vh 80vh;
-    grid-template-areas: "." "h1-com" "susg";
-  }
-  .communitypage .h1-com {
-    grid-area: h1-com;
-  }
-  .communitypage .susg {
-    grid-area: susg;
-  }
-  .communitypage .suscription {
-    color: rgb(243, 243, 243);
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 15%;
-    padding-left: 15%;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 2rem;
-    text-align: center;
-    justify-content: 0;
-    align-items: 0;
-    background-color: 0;
-  }
-  .communitypage .suscription h3 {
-    padding-bottom: 5%;
-  }
-  .communitypage .suscription form label {
-    display: flex;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 0;
-    padding-bottom: 8%;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  .communitypage .suscription form .input-submit {
-    display: flex;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 8%;
-    padding-bottom: 0;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  .communitypage .suscription form .input-submit .text-sub {
-    background-color: rgb(0, 1, 2);
-  }
-  .communitypage .suscription form .input-submit .input-sub {
-    background-color: rgb(0, 1, 2);
-  }
-  /*DiscografíaPage*/
-  #discs {
-    display: grid;
-    justify-items: center;
-    align-content: space-evenly;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg6.jpg);
-    background-size: cover;
-    height: 120rem;
-    grid-template-columns: repeat repeat(3, 1fr);
-    grid-template-rows: 40vh 30vh 55vh 55vh 55vh 38vh;
-    grid-template-areas: ". . ." "h1-d h1-d h1-d" "disc-1 disc-2 disc-3" "disc-4 disc-5 disc-6" "disc-7 disc-8 ." ". . .";
-  }
-  #discs .h1-d {
-    grid-area: h1-d;
-  }
-  #discs .disc-1 {
-    grid-area: disc-1;
-    cursor: pointer;
-  }
-  #discs .disc-1 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-1 img {
-    min-width: 18rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-2 {
-    grid-area: disc-2;
-    cursor: pointer;
-  }
-  #discs .disc-2 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-2 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-3 {
-    grid-area: disc-3;
-    cursor: pointer;
-  }
-  #discs .disc-3 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-3 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-4 {
-    grid-area: disc-4;
-    cursor: pointer;
-  }
-  #discs .disc-4 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-4 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-5 {
-    grid-area: disc-5;
-    cursor: pointer;
-  }
-  #discs .disc-5 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-5 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-6 {
-    grid-area: disc-6;
-    cursor: pointer;
-  }
-  #discs .disc-6 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-6 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-7 {
-    grid-area: disc-7;
-    cursor: pointer;
-  }
-  #discs .disc-7 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-7 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  #discs .disc-8 {
-    grid-area: disc-8;
-    cursor: pointer;
-  }
-  #discs .disc-8 .text-merch {
-    font-size: 1.4rem;
-    font-style: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  #discs .disc-8 img {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 1rem;
-  }
-  /*TourPage*/
-  #tourpage {
-    display: grid;
-    justify-items: center;
-    align-content: space-evenly;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
-    background-size: cover;
-    height: 100rem;
-    grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 0vh 30vh 50vh 50vh 10vh;
-    grid-template-areas: ". . ." "h3-tour h3-tour h3-tour" "tourg1 tourg2 tourg3" "tourg4 tourg5 tourg6";
-  }
-  #tourpage .h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
-    justify-content: center;
-  }
-  #tourpage #button-tour {
-    display: none;
-  }
-  /*MerchPage*/
-  #merchpage {
-    display: grid;
-    justify-items: center;
-    align-content: space-evenly;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
-    background-size: cover;
-    height: 80rem;
-    grid-template-columns: repeat repeat(3, 1fr);
-    grid-template-rows: 10vh 30vh 50vh 50vh;
-    grid-template-areas: ". . ." "h3-merch h3-merch h3-merch" "merch-1 merch-2 merch-3 " "merch-4 merch-5 merch-6";
-    grid-gap: 0rem;
-  }
-  #merchpage .merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
-    justify-content: center;
-  }
-  #merchpage .button-merch {
-    display: none;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
 }
+.impala-merch {
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
+  grid-template-areas: "h3-merch h3-merch h3-merch" ".   . . " "merch-1   merch-3  merch-6 " " merch-2  merch-4  merch-5 " " . . . " " . button-merch .";
+}
+.impala-merch .merch-1 {
+  width: 15rem;
+  background-color: #9950B8;
+  margin-top: 2rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.impala-merch .merch-2 {
+  width: 15rem;
+  background-color: #8B36A7;
+  margin-top: 2rem;
+  margin: auto;
+}
+.impala-merch .merch-3 {
+  width: 15rem;
+  background-color: #ED51C6;
+  margin-top: 2rem;
+  margin: auto;
+}
+.impala-merch .merch-4 {
+  width: 15rem;
+  background-color: #FF1493;
+  margin-top: 2rem;
+  margin: auto;
+}
+.impala-merch .merch-5 {
+  width: 15rem;
+  background-color: #DF41E9;
+  margin-top: 2rem;
+  margin: auto;
+}
+.impala-merch .merch-6 {
+  width: 15rem;
+  background-color: #D468E4;
+  margin-top: 2rem;
+  margin: auto;
+}
+
+/*ComunidadPage*/
+.communitypage {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
+  background-size: cover;
+  height: auto;
+  grid-template-columns: repeat repeat(1, 1fr);
+  grid-template-rows: 30vh 40vh 80vh;
+  grid-template-areas: "." "h1-com" "susg";
+}
+.communitypage .h1-com {
+  grid-area: h1-com;
+}
+.communitypage .susg {
+  grid-area: susg;
+}
+.communitypage .suscription {
+  color: rgb(243, 243, 243);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 15%;
+  padding-left: 15%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+  justify-content: 0;
+  align-items: 0;
+  background-color: 0;
+}
+.communitypage .suscription h3 {
+  padding-bottom: 5%;
+}
+.communitypage .suscription form label {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 8%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.communitypage .suscription form .input-submit {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8%;
+  padding-bottom: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.communitypage .suscription form .input-submit .text-sub {
+  background-color: rgb(0, 1, 2);
+}
+.communitypage .suscription form .input-submit .input-sub {
+  background-color: rgb(0, 1, 2);
+}
+
+/*DiscografíaPage*/
+#discs {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg6.jpg);
+  background-size: cover;
+  height: auto;
+  grid-template-columns: repeat repeat(3, 1fr);
+  grid-template-rows: 40vh 30vh 55vh 55vh 55vh 38vh;
+  grid-template-areas: ". . ." "h1-d h1-d h1-d" "disc-1 disc-2 disc-3" "disc-4 disc-5 disc-6" "disc-7 disc-8 ." ". . .";
+}
+#discs .h1-d {
+  grid-area: h1-d;
+}
+#discs .disc-1 {
+  grid-area: disc-1;
+  cursor: pointer;
+}
+#discs .disc-1 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-1 img {
+  min-width: 18rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-2 {
+  grid-area: disc-2;
+  cursor: pointer;
+}
+#discs .disc-2 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-2 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-3 {
+  grid-area: disc-3;
+  cursor: pointer;
+}
+#discs .disc-3 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-3 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-4 {
+  grid-area: disc-4;
+  cursor: pointer;
+}
+#discs .disc-4 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-4 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-5 {
+  grid-area: disc-5;
+  cursor: pointer;
+}
+#discs .disc-5 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-5 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-6 {
+  grid-area: disc-6;
+  cursor: pointer;
+}
+#discs .disc-6 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-6 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-7 {
+  grid-area: disc-7;
+  cursor: pointer;
+}
+#discs .disc-7 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-7 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+#discs .disc-8 {
+  grid-area: disc-8;
+  cursor: pointer;
+}
+#discs .disc-8 .text-merch {
+  font-size: 1.4rem;
+  font-style: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#discs .disc-8 img {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin: 1rem;
+}
+
+/*TourPage*/
+#tourpage {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
+  background-size: cover;
+  height: auto;
+  grid-template-columns: repeat repeat(1, 1fr);
+  grid-template-rows: 15vh 30vh 50vh 50vh 10vh;
+  grid-template-areas: ". . ." "h3-tour h3-tour h3-tour" "tourg1 tourg2 tourg3" "tourg4 tourg5 tourg6";
+}
+#tourpage .h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
+  justify-content: center;
+}
+#tourpage #button-tour {
+  display: none;
+}
+
+/*MerchPage*/
+#merchpage {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
+  background-size: cover;
+  height: auto;
+  grid-template-columns: repeat repeat(3, 1fr);
+  grid-template-rows: 10vh 30vh 50vh 50vh;
+  grid-template-areas: ". . ." "h3-merch h3-merch h3-merch" "merch-1 merch-2 merch-3 " "merch-4 merch-5 merch-6";
+  grid-gap: 0rem;
+}
+#merchpage .merch-1 {
+  width: 15rem;
+  background-color: #9950B8;
+  margin-top: 2rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+#merchpage .merch-2 {
+  width: 15rem;
+  background-color: #8B36A7;
+  margin-top: 2rem;
+  margin: auto;
+}
+#merchpage .merch-3 {
+  width: 15rem;
+  background-color: #ED51C6;
+  margin-top: 2rem;
+  margin: auto;
+}
+#merchpage .merch-4 {
+  width: 15rem;
+  background-color: #FF1493;
+  margin-top: 2rem;
+  margin: auto;
+}
+#merchpage .merch-5 {
+  width: 15rem;
+  background-color: #DF41E9;
+  margin-top: 2rem;
+  margin: auto;
+}
+#merchpage .merch-6 {
+  width: 15rem;
+  background-color: #D468E4;
+  margin-top: 2rem;
+  margin: auto;
+}
+#merchpage .button-merch {
+  display: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
 /*----------DESKTOP-SM----------*/
 @media (min-width: 768px) and (max-width: 992px) {
   body {
@@ -1284,7 +1330,7 @@ body {
   }
   .navbar .logo img {
     width: 13rem;
-    height: 7rem;
+    height: auto;
     padding-right: 2rem;
     padding-top: 0.5rem;
   }
@@ -1316,7 +1362,7 @@ body {
   }
   .impala-nov {
     width: 100%;
-    height: 93rem;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 40vh 60vh 100vh;
     grid-template-areas: ". icong ." ". susg ." ". leakg .";
@@ -1337,13 +1383,13 @@ body {
     padding: 0.5rem;
   }
   .impala-tour {
-    height: 90rem;
+    height: auto;
     grid-template-columns: repeat 2, 1fr;
     grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
     grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
   }
   .impala-merch {
-    height: 90rem;
+    height: auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
     grid-template-areas: "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch" ". . . . . ." "merch-1  . merch-3 . merch-6 ." " merch-2 . merch-4 . merch-5 ." " . . . . . ." " . . button-merch . . .";
@@ -1388,7 +1434,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
     background-size: cover;
-    height: 100rem;
+    height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 10vh 40vh 80vh;
     grid-template-areas: "." "h1-com" "susg";
@@ -1451,7 +1497,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg6.jpg);
     background-size: cover;
-    height: 120rem;
+    height: auto;
     grid-template-columns: repeat repeat(3, 1fr);
     grid-template-rows: 40vh 30vh 55vh 55vh 55vh 38vh;
     grid-template-areas: ". . ." "h1-d h1-d h1-d" "disc-1 disc-2 disc-3" "disc-4 disc-5 disc-6" "disc-7 disc-8 ." ". . .";
@@ -1595,7 +1641,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
     background-size: cover;
-    height: 100rem;
+    height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 0vh 30vh 50vh 50vh 10vh;
     grid-template-areas: ". . ." "h3-tour h3-tour h3-tour" "tourg1 tourg2 tourg3" "tourg4 tourg5 tourg6";
@@ -1648,7 +1694,7 @@ body {
     padding: 0.5rem;
   }
   .impala-intro {
-    height: 46rem;
+    height: auto;
     grid-template-rows: repeat(7, 15vh);
     grid-template-areas: ".  		.  	   .      	 . 				. 			." ". 			.   	 introg    introg introg introg" "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg    introg introg introg" "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg		 introg introg introg" "cg  		cg    	 introg		 introg introg introg";
     /*----Carousel----*/
@@ -1669,7 +1715,7 @@ body {
   }
   .impala-nov {
     width: 100%;
-    height: 120rem;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 80vh 100vh 100vh;
     grid-template-areas: ". icong ." ". susg ." ". leakg .";
@@ -1690,13 +1736,13 @@ body {
     padding: 0.8rem;
   }
   .impala-tour {
-    height: 110rem;
+    height: auto;
     grid-template-columns: repeat 2, 1fr;
     grid-template-rows: 20vh 50vh 50vh 50vh 35vh;
     grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
   }
   .impala-merch {
-    height: 110rem;
+    height: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 20vh 10vh 40vh 40vh 40vh 10vh 10vh;
     grid-template-areas: "h3-merch h3-merch" ". . " "merch-1  merch-3 " "merch-5  merch-4 " "merch-6  merch-2 " ". ." " button-merch  button-merch ";
@@ -1831,7 +1877,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg6.jpg);
     background-size: cover;
-    height: 125rem;
+    height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
     grid-template-rows: 70vh 25vh 55vh 55vh 55vh 55vh 38vh;
     grid-template-areas: ". ." "h1-d h1-d" "disc-1 disc-2" "disc-3 disc-4" "disc-5 disc-6" "disc-7 disc-8" ". .";
@@ -1975,7 +2021,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
     background-size: cover;
-    height: 100rem;
+    height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
     grid-template-rows: 20vh 40vh 50vh 50vh 50vh;
     grid-template-areas: ". ." "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6";
@@ -1994,7 +2040,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
     background-size: cover;
-    height: 130rem;
+    height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
     grid-template-rows: 14vh 50vh 50vh 50vh 50vh 30vh;
     grid-template-areas: ". ." "h3-merch h3-merch" "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
@@ -2020,7 +2066,7 @@ body {
     width: 100%;
   }
   .impala-intro {
-    height: 70rem;
+    height: auto;
     grid-template-columns: repeat(1, 576px);
     grid-template-rows: repeat(7, 24vh);
     grid-template-areas: "." "cg" "cg" "cg " "introg " "introg " "introg ";
@@ -2042,7 +2088,7 @@ body {
   }
   .impala-nov {
     width: 100%;
-    height: 110rem;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 80vh 100vh 100vh;
     grid-template-areas: ". icong ." ". susg ." ". leakg .";
@@ -2067,14 +2113,14 @@ body {
     padding: 1rem;
   }
   .impala-tour {
-    height: 170rem;
+    height: auto;
     grid-template-columns: repeat 1, 1fr;
     grid-template-rows: 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "h3-tour" "tourg1" "tourg2" "tourg3" "tourg4" "tourg5" "tourg6" "button-tour";
   }
   .impala-merch {
     width: 100%;
-    height: 215rem;
+    height: auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "h3-merch" "merch-1 " "merch-2 " "merch-3 " "merch-4 " "merch-5 " "merch-6 " "button-merch";
@@ -2156,7 +2202,7 @@ body {
   .footerg .pie-img {
     grid-area: pie-img;
     width: 25rem;
-    height: 15rem;
+    height: auto;
   }
   .footerg .pie-socialmedia {
     grid-area: pie-socialmedia;
@@ -2164,7 +2210,7 @@ body {
   }
   .footerg .pie-socialmedia a img {
     width: 5rem;
-    height: 5rem;
+    height: auto;
   }
   .footerg .footer-text {
     grid-area: footer-text;
@@ -2175,7 +2221,7 @@ body {
   .logo-music a img {
     grid-area: logo-music;
     width: 6.5rem;
-    height: 6.5rem;
+    height: auto;
   }
   /*ComunidadPage*/
   .communitypage {
@@ -2185,7 +2231,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
     background-size: cover;
-    height: 110rem;
+    height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 30vh 50vh 10vh;
     grid-template-areas: "." "h1-com" "susg";
@@ -2248,7 +2294,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg6.jpg);
     background-size: cover;
-    height: 250rem;
+    height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 10vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "." "h1-d" "disc-1" "disc-2" "disc-3" "disc-4" "disc-5" "disc-6" "disc-7" "disc-8";
@@ -2392,7 +2438,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
     background-size: cover;
-    height: 170rem;
+    height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "." "h3-tour" "tourg1" "tourg2" "tourg3" "tourg4" "tourg5" "tourg6" "button-tour";
@@ -2405,14 +2451,49 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
     background-size: cover;
-    height: 170rem;
+    height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 14vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
     grid-template-areas: "." "h3-merch" "merch-1" "merch-2" "merch-3" "merch-4" "merch-5" "merch-6";
     grid-gap: 0rem;
   }
-  #merchpage .merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
+  #merchpage .merch-1 {
+    width: 15rem;
+    background-color: #9950B8;
+    margin-top: 2rem;
+    margin: auto;
     justify-content: center;
+    align-items: center;
+  }
+  #merchpage .merch-2 {
+    width: 15rem;
+    background-color: #8B36A7;
+    margin-top: 2rem;
+    margin: auto;
+  }
+  #merchpage .merch-3 {
+    width: 15rem;
+    background-color: #ED51C6;
+    margin-top: 2rem;
+    margin: auto;
+  }
+  #merchpage .merch-4 {
+    width: 15rem;
+    background-color: #FF1493;
+    margin-top: 2rem;
+    margin: auto;
+  }
+  #merchpage .merch-5 {
+    width: 15rem;
+    background-color: #DF41E9;
+    margin-top: 2rem;
+    margin: auto;
+  }
+  #merchpage .merch-6 {
+    width: 15rem;
+    background-color: #D468E4;
+    margin-top: 2rem;
+    margin: auto;
   }
   #merchpage .button-merch {
     display: none;
@@ -2435,7 +2516,7 @@ body {
   .navbar .menu {
     position: absolute;
     width: 100%;
-    height: 50rem;
+    height: auto;
     display: grid;
     align-items: center;
     background-color: #7F7086;
