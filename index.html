@@ -9,7 +9,7 @@
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Tomy Zarriello">
 	<!-- Bootstrap CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" type="stylesheet">
 	<!-- Mi CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Iconos y Fresco.css-->
@@ -50,34 +50,31 @@
 			<!--------------------- Inicia Intro  -------------------->
 			<section class="impala-intro">
 				<!-- Carousel -->
-				<div class="carousel cg">
-					<div>
-						<div id="carouselExampleSlideOnly" data-bs-ride="carousel">
-							<!-- Carousel imgs -->
-							<div class="carousel-inner">
-								<div class="carousel-item active" data-bs-interval="4000">
-									<img src="multimedia/band/band1.webp" class="d-grid w-100" alt="Kevin Parker Singing Live Performance">
-								</div>
-								<div class="carousel-item " data-bs-interval="5000">
-									<img src="multimedia/band/band6.jpg" class="d-grid w-100" alt="Kevin Parker Playing Guitar Live">
-								</div>
-								<div class="carousel-item" data-bs-interval="5000">
-									<img src="multimedia/band/band2.jpg" class="d-grid w-100" alt="Tame Impala Live Performance">
-								</div>
-								<div class="carousel-item" data-bs-interval="5000">
-									<img src="multimedia/band/band3.jpg" class="d-grid w-100" alt="Foto Promocional de la banda con los 5 miembros">
-								</div>
-								<div class="carousel-item" data-bs-interval="5000">
-									<img src="multimedia/band/band4.jpg" class="d-grid w-100" alt="Foto de Tame Impala reunidos, fondo psicodelico">
-								</div>
-								<div class="carousel-item" data-bs-interval="5000">
-									<img src="multimedia/band/band5.jpg" class="d-grid w-100" alt="Tame Impala en Gira, Foto de concierto en vivo">
-								</div>
-							</div>
+				<div id="carouselExampleSlidesOnly" class="cg carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active"data-bs-interval="4000">
+							<img src="multimedia/band/band1.webp" class="d-block w-100" alt="Kevin Parker Singing Live Performance">
+						</div>
+						<div class="carousel-item "data-bs-interval="4000" class="w-100 d-block">
+							<img src="multimedia/band/band6.jpg">
+						</div>
+						<div class="carousel-item" data-bs-interval="4000">
+							<img src="multimedia/band/band2.jpg" class="d-block w-100" alt="Tame Impala Live Performance">
+						</div>
+						<div class="carousel-item" data-bs-interval="4000">
+							<img src="multimedia/band/band3.jpg" class="d-block w-100" alt="Foto Promocional de la banda con los 5 miembros">
+						</div>
+						<div class="carousel-item" data-bs-interval="4000">
+							<img src="multimedia/band/band4.jpg" class="d-block w-100" alt="Foto de Tame Impala reunidos, fondo psicodelico">
+						</div>
+						<div class="carousel-item" data-bs-interval="4000">
+							<img src="multimedia/band/band5.jpg" class="d-block w-100" alt="Tame Impala en Gira, Foto de concierto en vivo">
 						</div>
 					</div>
-					<!-- Ends Carousel -->
 				</div>
+				
+				<!-- Ends Carousel -->
+
 				<!-- Bienvenida a Tame impala Oficial -->
 				<div class="introg">
 					<h4 class="text-center">Bienvenidos a la página oficial de</h4> 
@@ -94,19 +91,19 @@
 			<div class="icong w-100 "> 
 				<div class="logo-music">
 					<a href="https://music.apple.com/us/artist/tame-impala/290242959">
-						<img src="multimedia/logo/Apple_Music.webp" alt="Logo Apple Music">
+						<img src="multimedia/logo/Apple_Music.webp" alt="Logo Apple Music" class="zoom">
 					</a>
 					<a href="https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb">
-						<img src="multimedia/logo/Spotify.webp" alt="Logo Spotify">
+						<img src="multimedia/logo/Spotify.webp" alt="Logo Spotify" class="zoom">
 					</a>
 					<a href="https://www.youtube.com/c/tameimpalamusic">
-						<img src="multimedia/logo/YouTube.webp" alt="Logo Youtube">
+						<img src="multimedia/logo/YouTube.webp" alt="Logo Youtube" class="zoom">
 					</a>
 					<a href="https://music.amazon.com/artists/B001FEAEBU/tame-impala">
-						<img src="multimedia/logo/Amazon.webp" alt="Logo Amazon Music">
+						<img src="multimedia/logo/Amazon.webp" alt="Logo Amazon Music" class="zoom">
 					</a>
 					<a href="https://www.deezer.com/us/artist/134790">
-						<img src="multimedia/logo/Deezer.webp" alt="Logo Deezer">
+						<img src="multimedia/logo/Deezer.webp" alt="Logo Deezer" class="zoom">
 					</a>
 				</div>
 			</div>
@@ -118,7 +115,7 @@
 						<label for="mail"> Dejanos tu email para Suscríbirte a todas las novedades de la banda, se parte de la Comunidad!!
 						</label>
 						<div class="input-submit">
-							<input type="text" name="name" placeholder="email@example.com" class="text-sub text-white fw-ligh fs-5 border-top-0 border-start-0 border-end-0 pe-5 ps-5">	
+							<input type="text" name="name" placeholder="email@example.com" class="text-sub text-white fw-ligh fs-5 border-top-0 border-start-0 border-end-0 pe-5 ps-5 pt-5">	
 							<input type="submit" value="Suscríbete" class=" input-sub text-white text-uppercase fw-normal fs-4 p-4 ">
 						</div>	
 					</form>
@@ -129,7 +126,7 @@
 				<div class="new-leak">
 					<h3 class="new-leak-text"> New Gold ft. Gorillaz & Bootie Brown, ESCUCHA AHORA!</h3>
 					<div class="video-leak">
-						<video src="multimedia/video/GorillazNewGoldFtTameImpala.mp4" width="100%" autoplay controls ></video>
+						<video src="multimedia/video/GorillazNewGoldFtTameImpala.mp4" class="w-100" controls ></video>
 					</div>
 				</div>
 			</div>
@@ -146,7 +143,7 @@
 						<h4>October 22, 2022</h4>
 						<h4>LOUISVILLE, USA</h4>
 						<div id="entradas" class="pt-5">
-							<a href="#" target="_blank" id="entradas" >	Entradas
+							<a href="https://www.songkick.com/es/artists/927852-tame-impala" target="_blank" id="entradas" >	Entradas
 							</a>
 						</div>
 					</div>
@@ -154,7 +151,7 @@
 						<h4>October 25, 2022</h4>
 						<h4>BROOKLYN, USA</h4>
 						<div id="entradas"  class="pt-5">
-							<a href="#" target="_blank" id="entradas" >	Entradas
+							<a href="https://www.songkick.com/es/artists/927852-tame-impala" target="_blank" id="entradas" >	Entradas
 							</a>
 						</div>
 					</div>
@@ -162,7 +159,7 @@
 						<h4>October 28, 2022</h4>
 						<h4>ATLANTA, GA , USA</h4>
 						<div id="entradas"  class="pt-5">
-							<a href="#" target="_blank" id="entradas" >	Entradas
+							<a href="https://www.songkick.com/es/artists/927852-tame-impala" target="_blank" id="entradas" >	Entradas
 							</a>
 						</div>
 					</div>
@@ -170,7 +167,7 @@
 						<h4>October 31, 2022</h4>
 						<h4>NEW ORLEANS, USA</h4>
 						<div id="entradas"  class="pt-5">
-							<a href="#" target="_blank" id="entradas" >	Entradas
+							<a href="https://www.songkick.com/es/artists/927852-tame-impala" target="_blank" id="entradas" >	Entradas
 							</a>
 						</div>
 					</div>
@@ -178,7 +175,7 @@
 						<h4>November 03, 2022</h4>
 						<h4>HOUSTON, TX, USA</h4>
 						<div id="entradas"  class="pt-5">
-							<a href="#" target="_blank" id="entradas" >	Entradas
+							<a href="https://www.songkick.com/es/artists/927852-tame-impala" target="_blank" id="entradas" >	Entradas
 							</a>
 						</div>
 					</div>
@@ -186,7 +183,7 @@
 						<h4>November 06, 2022</h4>
 						<h4>SACRAMENTO, USA</h4>
 						<div id="entradas"  class="pt-5">
-							<a href="#" target="_blank" id="entradas" >	Entradas
+							<a href="https://www.songkick.com/es/artists/927852-tame-impala" target="_blank" id="entradas" >	Entradas
 							</a>
 						</div>
 					</div>
@@ -208,7 +205,7 @@
 					</div>
 					<div class="merch-1"> 
 						<div class="container-text-merch">
-							<a href="tienda.html">
+							<a href="pages/tienda.html">
 								<img src="multimedia/merch/disco2.webp" 	alt="Vinilo Lonerism Tame Impala" 	class="zoom w-100 image-merch">
 								<div class="middle-merch">
 									<div class="text-merch"> Vinilo Lonerism - Tame Impala - US$30</div>
@@ -218,7 +215,7 @@
 					</div>
 					<div class="merch-2" >
 						<div class="container-text-merch">
-							<a href="tienda.html">
+							<a href="pages/tienda.html">
 								<img src="multimedia/merch/disco5.webp" 	alt="Vinilo Lonerism Tame Impala" 	class="zoom w-100 image-merch ">
 								<div class="middle-merch">
 									<div class="text-merch"> Vinilo The Slow Rush - Tame Impala - US$35</div>
@@ -228,7 +225,7 @@
 					</div>
 					<div class="merch-3 p-4">
 						<div class="container-text-merch">
-							<a href="tienda.html">
+							<a href="pages/tienda.html">
 								<img src="multimedia/merch/4.webp" 	alt="Buzo Negro Hoddie Con Logo Tame Impala" 	class="zoom w-100 image-merch ">
 								<div class="middle-merch">
 									<div class="text-merch"> Buzo Negro Hoddie Con Logo Tame Impala - US$20</div>
@@ -238,7 +235,7 @@
 					</div>
 					<div class="merch-4 p-4" >
 						<div class="container-text-merch">
-							<a href="tienda.html">
+							<a href="pages/tienda.html">
 								<img src="multimedia/merch/9.webp" 	alt="Buzo Blanco Hoddie Con Logo Tame Impala"	 class="zoom w-100 image-merch ">
 								<div class="middle-merch">
 									<div class="text-merch"> Buzo Blanco Hoddie Con Logo Tame Impala - US$20</div>
@@ -248,7 +245,7 @@
 					</div>
 					<div class="merch-5 p-4" >
 						<div class="container-text-merch">
-							<a href="tienda.html">
+							<a href="pages/tienda.html">
 								<img src="multimedia/merch/2.webp" alt="Buzo Amarillo Con Logo de Tame Impala" class="zoom w-100 image-merch pt-4">
 								<div class="middle-merch">
 									<div class="text-merch"> Buzo Amarillo Con Logo Tame Impala - US$20</div>
@@ -258,7 +255,7 @@
 					</div>
 					<div class="merch-6 p-4 ">
 						<div class="container-text-merch">
-							<a href="tienda.html">
+							<a href="pages/tienda.html">
 								<img src="multimedia/merch/7.webp" alt="Buzo Negro Cuello Redondo Con Estampado logo Tame Impala" class="zoom w-100 image-merch pt-4 ">
 								<div class="middle-merch">
 									<div class="text-merch">
@@ -324,5 +321,8 @@
 <script type="text/javascript" src="/fresco/dist/js/fresco.min.js"></script>
 <!--- Bootstrap Js --->
 <script src="js/bootstrap.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
 </body>
 </html>

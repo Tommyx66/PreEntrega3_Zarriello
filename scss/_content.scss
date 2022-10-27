@@ -3,7 +3,7 @@ header{
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 200;
   padding: 10px 0;
 }
 body{
@@ -36,11 +36,21 @@ body{
     @include orgSection (10rem,3rem,0,3rem,$mainFont,1.5rem,$textLight,2rem,justify,0,0,none);
   }
   /*----Carousel----*/
-  .carousel-inner{ 
-    width: 100%;
-    min-height: 34rem;
-    max-height: 34rem;
-    object-fit: cover;
+  .carousel{
+    .carousel-inner{
+      padding: 0rem 2rem;
+      padding-top: 4rem;
+      .carousel-item{
+
+      }
+      img{
+        width: 100%;
+        min-height: 34rem;
+        max-height: 34rem;
+        object-fit: cover;
+      }
+    } 
+    
   }
 }
 //novedades
