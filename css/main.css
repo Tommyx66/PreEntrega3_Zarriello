@@ -13816,7 +13816,7 @@ body {
 }
 
 /*----------DESKTOP-SM----------*/
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   body {
     overflow-x: hidden;
   }
@@ -13835,7 +13835,8 @@ body {
     padding: 1rem;
   }
   .impala-intro {
-    grid-template-areas: ".  .    .       . . ." ". .   introg    introg introg introg" "cg  cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" ".  .    .       . . .";
+    grid-template-rows: repeat 6, 18.5vh;
+    grid-template-areas: ".  .    .       . . ." "cg cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" "cg  cg    introg    introg introg introg" ".  .    .       . . .";
   }
   .impala-intro .introg {
     font-size: 1.3rem;
@@ -13847,7 +13848,7 @@ body {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40vh 60vh 100vh;
+    grid-template-rows: 40vh 60vh 100%;
     grid-template-areas: ". icong ." ". susg ." ". leakg .";
   }
   .impala-nov .logo-music {
@@ -13865,61 +13866,17 @@ body {
     height: 11.5rem;
     padding: 0.5rem;
   }
-  .impala-tour {
-    height: auto;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
-    grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
-  }
-  .impala-merch {
-    height: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
-    grid-template-areas: "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch" ". . . . . ." "merch-1  . merch-3 . merch-6 ." " merch-2 . merch-4 . merch-5 ." " . . . . . ." " . . button-merch . . .";
-  }
-  .impala-merch .merch-1 {
-    width: 25rem;
-    background-color: #9950B8;
-    padding-left: 2rem;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-2 {
-    width: 25rem;
-    background-color: #8B36A7;
-    margin-top: 2rem;
-    margin-left: 1rem;
-  }
-  .impala-merch .merch-3 {
-    width: 15rem;
-    background-color: #ED51C6;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-4 {
-    width: 15rem;
-    background-color: #FF1493;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-5 {
-    width: 15rem;
-    background-color: #DF41E9;
-    margin-top: 2rem;
-  }
-  .impala-merch .merch-6 {
-    width: 15rem;
-    background-color: #D468E4;
-    margin-top: 2rem;
-  }
   /*ComunidadPage*/
   .communitypage {
     display: grid;
     justify-items: center;
     align-content: space-evenly;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg7.jpg);
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 10vh 40vh 80vh;
+    grid-template-rows: 30vh 40vh 80vh;
     grid-template-areas: "." "h1-com" "susg";
   }
   .communitypage .h1-com {
@@ -13982,7 +13939,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(3, 1fr);
-    grid-template-rows: 40vh 30vh 55vh 55vh 55vh 38vh;
+    grid-template-rows: 30vh 30vh 55vh 55vh 55vh 38vh;
     grid-template-areas: ". . ." "h1-d h1-d h1-d" "disc-1 disc-2 disc-3" "disc-4 disc-5 disc-6" "disc-7 disc-8 ." ". . .";
   }
   #discs .h1-d {
@@ -14126,8 +14083,11 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 0vh 30vh 50vh 50vh 10vh;
+    grid-template-rows: 20vh 30vh 50vh 50vh 10vh;
     grid-template-areas: ". . ." "h3-tour h3-tour h3-tour" "tourg1 tourg2 tourg3" "tourg4 tourg5 tourg6";
+  }
+  #tourpage .h3-tour {
+    background: none;
   }
   #tourpage .h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
     justify-content: center;
@@ -14143,11 +14103,14 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
     background-size: cover;
-    height: 80rem;
+    height: auto;
     grid-template-columns: repeat repeat(3, 1fr);
-    grid-template-rows: 10vh 30vh 50vh 50vh;
+    grid-template-rows: 20vh 30vh 50vh 50vh;
     grid-template-areas: ". . ." "h3-merch h3-merch h3-merch" "merch-1 merch-2 merch-3 " "merch-4 merch-5 merch-6";
     grid-gap: 0rem;
+  }
+  #merchpage .h3-merch {
+    background: none;
   }
   #merchpage .merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
     justify-content: center;
@@ -14160,7 +14123,7 @@ body {
   }
 }
 /*----------TABLET----------*/
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 769px) {
   body {
     overflow-x: hidden;
     width: 768px;
@@ -14178,8 +14141,8 @@ body {
   }
   .impala-intro {
     height: auto;
-    grid-template-rows: repeat(7, 15vh);
-    grid-template-areas: ".  		.  	   .      	 . 				. 			." ". 			.   	 introg    introg introg introg" "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg    introg introg introg" "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg		 introg introg introg" "cg  		cg    	 introg		 introg introg introg";
+    grid-template-rows: repeat(5, 15.5vh);
+    grid-template-areas: ". 			.   	 .    . . ." "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg    introg introg introg" "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg		 introg introg introg";
   }
   .impala-intro .introg {
     font-size: 1.3rem;
@@ -14191,7 +14154,7 @@ body {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80vh 100vh 100vh;
+    grid-template-rows: 40vh 80vh 100%;
     grid-template-areas: ". icong ." ". susg ." ". leakg .";
   }
   .impala-nov .logo-music {
@@ -14212,14 +14175,14 @@ body {
   .impala-tour {
     height: auto;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: 20vh 50vh 50vh 50vh 35vh;
-    grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
+    grid-template-rows: 20vh 50vh 50vh 50vh 25vh 10vh;
+    grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour" ". .";
   }
   .impala-merch {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 20vh 10vh 40vh 40vh 40vh 10vh 10vh;
-    grid-template-areas: "h3-merch h3-merch" ". . " "merch-1  merch-3 " "merch-5  merch-4 " "merch-6  merch-2 " ". ." " button-merch  button-merch ";
+    grid-template-rows: 20vh 10vh 40vh 40vh 40vh 10vh 10vh 10vh;
+    grid-template-areas: "h3-merch h3-merch" ". . " "merch-1  merch-3 " "merch-5  merch-4 " "merch-6  merch-2 " ". ." " button-merch  button-merch " ". .";
   }
   .impala-merch .merch-1 {
     width: 30rem;
@@ -14234,21 +14197,21 @@ body {
     background-color: #8B36A7;
   }
   .impala-merch .merch-2 img {
-    max-width: 24rem;
+    max-width: 20rem;
   }
   .impala-merch .merch-3 {
     width: 30rem;
     background-color: #ED51C6;
   }
   .impala-merch .merch-3 img {
-    max-width: 15rem;
+    max-width: 17rem;
   }
   .impala-merch .merch-4 {
     width: 30rem;
     background-color: #FF1493;
   }
   .impala-merch .merch-4 img {
-    max-width: 15rem;
+    max-width: 17rem;
   }
   .impala-merch .merch-5 {
     width: 30rem;
@@ -14256,7 +14219,7 @@ body {
     margin-left: 6rem;
   }
   .impala-merch .merch-5 img {
-    max-width: 15rem;
+    max-width: 16rem;
   }
   .impala-merch .merch-6 {
     width: 30rem;
@@ -14264,7 +14227,7 @@ body {
     margin-left: 6rem;
   }
   .impala-merch .merch-6 img {
-    max-width: 14rem;
+    max-width: 15rem;
   }
   .impala-merch .button-merch {
     font-size: 1.5rem;
@@ -14286,11 +14249,11 @@ body {
     justify-items: center;
     align-content: space-evenly;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg7.jpg);
     background-size: cover;
     height: 110rem;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 10vh 40vh 80vh;
+    grid-template-rows: 0vh 30vh 80vh;
     grid-template-areas: "." "h1-com" "susg";
   }
   .communitypage .h1-com {
@@ -14353,7 +14316,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
-    grid-template-rows: 70vh 25vh 55vh 55vh 55vh 55vh 38vh;
+    grid-template-rows: 30vh 30vh 55vh 55vh 55vh 55vh 38vh;
     grid-template-areas: ". ." "h1-d h1-d" "disc-1 disc-2" "disc-3 disc-4" "disc-5 disc-6" "disc-7 disc-8" ". .";
   }
   #discs .h1-d {
@@ -14500,6 +14463,9 @@ body {
     grid-template-rows: 20vh 40vh 50vh 50vh 50vh;
     grid-template-areas: ". ." "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6";
   }
+  #tourpage .h3-tour {
+    background: none;
+  }
   #tourpage .h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
     justify-content: center;
   }
@@ -14516,8 +14482,8 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
-    grid-template-rows: 14vh 50vh 50vh 50vh 50vh 30vh;
-    grid-template-areas: ". ." "h3-merch h3-merch" "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
+    grid-template-rows: 15vh 0vh 20vh 50vh 50vh 50vh;
+    grid-template-areas: ". ." "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
     grid-gap: 0rem;
   }
   #merchpage .merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
@@ -14534,7 +14500,8 @@ body {
 @media (max-width: 576px) {
   body {
     overflow-x: hidden;
-    width: 100%;
+    width: 576px;
+    height: auto;
   }
   header {
     width: 100%;
@@ -14543,8 +14510,8 @@ body {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(7, 24vh);
-    grid-template-areas: "cg" "cg" "cg" "cg " "introg " "introg " "introg ";
+    grid-template-rows: 4vh 10vh 10vh 40vh 20vh 20vh 15vh;
+    grid-template-areas: "." "cg" "cg" "cg " "introg " "introg " ". ";
     /*----Carousel----*/
   }
   .impala-intro .introg {
@@ -14709,11 +14676,11 @@ body {
     justify-items: center;
     align-content: space-evenly;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg7.jpg);
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 30vh 50vh 10vh;
+    grid-template-rows: 30vh 30vh 80vh;
     grid-template-areas: "." "h1-com" "susg";
   }
   .communitypage .h1-com {
@@ -14776,7 +14743,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 10vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
+    grid-template-rows: 15vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "." "h1-d" "disc-1" "disc-2" "disc-3" "disc-4" "disc-5" "disc-6" "disc-7" "disc-8";
   }
   #discs .h1-d {
@@ -14923,6 +14890,9 @@ body {
     grid-template-rows: 15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "." "h3-tour" "tourg1" "tourg2" "tourg3" "tourg4" "tourg5" "tourg6" "button-tour";
   }
+  #tourpage .h3-tour {
+    background: none;
+  }
   /*MerchPage*/
   #merchpage {
     display: grid;
@@ -14936,6 +14906,9 @@ body {
     grid-template-rows: 14vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
     grid-template-areas: "." "h3-merch" "merch-1" "merch-2" "merch-3" "merch-4" "merch-5" "merch-6";
     grid-gap: 0rem;
+  }
+  #merchpage .h3-merch {
+    background: none;
   }
   #merchpage .merch-1 {
     width: 15rem;
