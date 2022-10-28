@@ -8,6 +8,7 @@ header{
 }
 body{
   overflow-x:hidder;
+  background-image: url(../multimedia/background/bgbase.jpg)
 }
 /*______________________- Seccion Intro -______________________*/
 .impala-intro{
@@ -183,25 +184,15 @@ body{
   @include button(0rem,10rem);
 }
 /*______________________- Seccion Merch -______________________*/
-.impala-merch{
-  height: 80rem;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../multimedia/background/bg5.jpg);
+.impala-merch{  
   background-size: cover;
   display: grid;
   color:$mainColor ;
-  font-size: 1.5rem;
+
   font-family: $mainFont;
   text-transform: uppercase;
   font-weight: bold;
-  grid-gap:2rem;
-  grid-template-columns: repeat(6, 1fr) ;
-  grid-template-rows: 15vh 25vh 25vh 10vh 8vh;
-  grid-template-areas:
-  "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch"
-  "merch-1 merch-1 merch-3 merch-4 merch-2 merch-2 "
-  "merch-1 merch-1 merch-5 merch-6 merch-2 merch-2 "
-  ". . . . . ."
-  "button-merch button-merch button-merch button-merch button-merch button-merch";
+  
 }
 .h3-merch{
   grid-area: h3-merch;
@@ -211,104 +202,7 @@ body{
   background: rgb(0,0,0);
   width: 100%;
 }
-.merch-1{
-  background-color: #9950B8;
-  margin-left: 1rem;
-  @include merchArea(merch-1,flex, center,center,center,center,30rem);
-  .container-text-merch{
-    position: relative;
-    .image-merch { 
-      @include imageMerch(1,block,.5s ease,hidden,.3);
-    }
-    .middle-merch {
-      @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1);
-      .text-merch { 
-        @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
-      }  
-    }
-  }   
-}
-.merch-2{
-  background-color: #8B36A7;
-  @include merchArea(merch-2,flex, center,center,center,center,30rem);
-  .container-text-merch{
-    position: relative;
-    .image-merch { 
-      @include imageMerch(1,block,.5s ease,hidden,.3);
-    }
-    .middle-merch {
-      @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1);
-    }
-    .text-merch { 
-      @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
-    }
-  }
-}
-.merch-3{
-  background-color: #ED51C6;
-  padding-bottom: 30%;
-  @include merchArea(merch-3,flex, center,center,center,center,15rem);
-  .container-text-merch{
-    position: relative;
-    .image-merch { 
-      @include imageMerch(1,block,.5s ease,hidden,.3);
-    }
-    .middle-merch {
-      @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1)
-    }
-    .text-merch { 
-      @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
-    }
-  }
-}
-.merch-4{
-  background-color: #DF41E9;
-  @include merchArea(merch-4,flex, center,center,center,center,15rem);
-  .container-text-merch{
-    position: relative;
-    .image-merch { 
-      @include imageMerch(1,block,.5s ease,hidden,.3);
-    }
-    .middle-merch {
-      @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1)
-    }
-    .text-merch { 
-      @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
-    }
-  }
-}
-.merch-5{
-  background-color: #FF1493;
-  @include merchArea(merch-5,flex, center,center,center,center,15rem);
-  .container-text-merch{
-    position: relative;
-    .image-merch { 
-      @include imageMerch(1,block,.5s ease,hidden,.3);
-    }
-    .middle-merch {
-      @include middleMerch(.5s ease,0,absolute,50%,50%,translate(-50%, -50%),translate(-50%, -50%),center,1)
-    }
-    .text-merch { 
-      @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
-    }
-  }
-}
-.merch-6{
-  background-color: #9950B8;
-  @include merchArea(merch-6,flex, center,center,center,center,15rem);
-  .container-text-merch{
-    position: relative;
-    .image-merch { 
-      @include imageMerch(1,block,.5s ease,hidden,.3);
-    }
-    .middle-merch {
-      @include middleMerch(.5s ease,0,absolute,50%,50%,(translate(-50%, -50%)),(translate(-50%, -50%)),center,1)
-    }
-    .text-merch { 
-      @include textMerch(pre-wrap,$mainColor,absolute,hidden,50%,50%,translate(-50%, -50%),translate(-50%, -50%),1.2rem,$mainFont,uppercase,400rem);
-    }
-  }
-}
+
 .button-merch{
   grid-area: button-merch;
   display: flex;
@@ -323,16 +217,6 @@ body{
 /*__________ Discografia*_____________*/
 .discs{
   display:grid;
-  grid-template-rows: 10rem 30rem 30rem 50rem;
-  grid-gap: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-  grid-template-columns: repeat(3, 1fr) ;
-  grid-template-areas: 
-  "h1-d h1-d h1-d"
-  "disc-1 disc-2 disc-3"
-  "disc-4 disc-5 disc-6"
-  "disc-7 disc-8 ."
   ;
   .card {
     width: 300px;
@@ -406,3 +290,33 @@ body{
   height: 4em; 
   background-color: $secondaryColor;
 }
+
+.price {
+  .nowrap{
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
+    border-color: rgb(212 212 212/var(--tw-border-opacity));
+    border-radius: 0.5rem;
+    border-width: 1px;
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
+    align-content:center;
+    color: rgb(212 212 212/var(--tw-text-opacity));
+    display: block;
+    font-family: $secondaryFont, sans-serif;
+    font-size: .75rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    transition-duration: .15s;
+    transition-property: color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);}
+  }
+
+

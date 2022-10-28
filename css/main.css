@@ -12532,7 +12532,7 @@ h2, .h2 {
   font-size: 3.5rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-weight: 400rem;
+  font-weight: bold;
 }
 
 h3, .h3 {
@@ -12607,6 +12607,7 @@ header {
 
 body {
   overflow-x: hidder;
+  background-image: url(../multimedia/background/bgbase.jpg);
 }
 
 /*______________________- Seccion Intro -______________________*/
@@ -12931,19 +12932,12 @@ body {
 
 /*______________________- Seccion Merch -______________________*/
 .impala-merch {
-  height: 80rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
   background-size: cover;
   display: grid;
   color: rgb(243, 243, 243);
-  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 15vh 25vh 25vh 10vh 8vh;
-  grid-template-areas: "h3-merch h3-merch h3-merch h3-merch h3-merch h3-merch" "merch-1 merch-1 merch-3 merch-4 merch-2 merch-2 " "merch-1 merch-1 merch-5 merch-6 merch-2 merch-2 " ". . . . . ." "button-merch button-merch button-merch button-merch button-merch button-merch";
 }
 
 .h3-merch {
@@ -12953,308 +12947,6 @@ body {
   text-align: center;
   background: rgb(0, 0, 0);
   width: 100%;
-}
-
-.merch-1 {
-  background-color: #9950B8;
-  margin-left: 1rem;
-  grid-area: merch-1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 30rem;
-}
-.merch-1 .container-text-merch {
-  position: relative;
-}
-.merch-1 .container-text-merch .image-merch {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-.merch-1 .container-text-merch .image-merch:hover {
-  opacity: 0.3;
-}
-.merch-1 .container-text-merch .middle-merch {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.merch-1 .container-text-merch .middle-merch:hover {
-  opacity: 1;
-}
-.merch-1 .container-text-merch .middle-merch .text-merch {
-  white-space: pre-wrap;
-  color: rgb(243, 243, 243);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400rem;
-}
-
-.merch-2 {
-  background-color: #8B36A7;
-  grid-area: merch-2;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 30rem;
-}
-.merch-2 .container-text-merch {
-  position: relative;
-}
-.merch-2 .container-text-merch .image-merch {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-.merch-2 .container-text-merch .image-merch:hover {
-  opacity: 0.3;
-}
-.merch-2 .container-text-merch .middle-merch {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.merch-2 .container-text-merch .middle-merch:hover {
-  opacity: 1;
-}
-.merch-2 .container-text-merch .text-merch {
-  white-space: pre-wrap;
-  color: rgb(243, 243, 243);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400rem;
-}
-
-.merch-3 {
-  background-color: #ED51C6;
-  padding-bottom: 30%;
-  grid-area: merch-3;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 15rem;
-}
-.merch-3 .container-text-merch {
-  position: relative;
-}
-.merch-3 .container-text-merch .image-merch {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-.merch-3 .container-text-merch .image-merch:hover {
-  opacity: 0.3;
-}
-.merch-3 .container-text-merch .middle-merch {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.merch-3 .container-text-merch .middle-merch:hover {
-  opacity: 1;
-}
-.merch-3 .container-text-merch .text-merch {
-  white-space: pre-wrap;
-  color: rgb(243, 243, 243);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400rem;
-}
-
-.merch-4 {
-  background-color: #DF41E9;
-  grid-area: merch-4;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 15rem;
-}
-.merch-4 .container-text-merch {
-  position: relative;
-}
-.merch-4 .container-text-merch .image-merch {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-.merch-4 .container-text-merch .image-merch:hover {
-  opacity: 0.3;
-}
-.merch-4 .container-text-merch .middle-merch {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.merch-4 .container-text-merch .middle-merch:hover {
-  opacity: 1;
-}
-.merch-4 .container-text-merch .text-merch {
-  white-space: pre-wrap;
-  color: rgb(243, 243, 243);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400rem;
-}
-
-.merch-5 {
-  background-color: #FF1493;
-  grid-area: merch-5;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 15rem;
-}
-.merch-5 .container-text-merch {
-  position: relative;
-}
-.merch-5 .container-text-merch .image-merch {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-.merch-5 .container-text-merch .image-merch:hover {
-  opacity: 0.3;
-}
-.merch-5 .container-text-merch .middle-merch {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.merch-5 .container-text-merch .middle-merch:hover {
-  opacity: 1;
-}
-.merch-5 .container-text-merch .text-merch {
-  white-space: pre-wrap;
-  color: rgb(243, 243, 243);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400rem;
-}
-
-.merch-6 {
-  background-color: #9950B8;
-  grid-area: merch-6;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 15rem;
-}
-.merch-6 .container-text-merch {
-  position: relative;
-}
-.merch-6 .container-text-merch .image-merch {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-.merch-6 .container-text-merch .image-merch:hover {
-  opacity: 0.3;
-}
-.merch-6 .container-text-merch .middle-merch {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.merch-6 .container-text-merch .middle-merch:hover {
-  opacity: 1;
-}
-.merch-6 .container-text-merch .text-merch {
-  white-space: pre-wrap;
-  color: rgb(243, 243, 243);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400rem;
 }
 
 .button-merch {
@@ -13296,12 +12988,6 @@ body {
 /*__________ Discografia*_____________*/
 .discs {
   display: grid;
-  grid-template-rows: 10rem 30rem 30rem 50rem;
-  grid-gap: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "h1-d h1-d h1-d" "disc-1 disc-2 disc-3" "disc-4 disc-5 disc-6" "disc-7 disc-8 .";
 }
 .discs .card {
   width: 300px;
@@ -13424,11 +13110,40 @@ body {
   background-color: rgb(224, 210, 255);
 }
 
+.price .nowrap {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  background-color: rgb(0 0 0/var(--tw-bg-opacity));
+  border-color: rgb(212 212 212/var(--tw-border-opacity));
+  border-radius: 0.5rem;
+  border-width: 1px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: rgb(212 212 212/var(--tw-text-opacity));
+  display: block;
+  font-family: "Work Sans", sans-serif, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.15s;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Media Queries */
 /*----------DESKTOP-MD----------*/
 @media (min-width: 992px) and (max-width: 1900px) {
   body {
     overflow-x: hidden;
+    background-image: url(../multimedia/background/bgbase1.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
   .navbar .logo img {
     width: 20rem;
@@ -13448,10 +13163,11 @@ body {
     grid-template-areas: ".  .    .       . . ." "cg  cg   cg    introg introg introg" "cg  cg   cg    introg introg introg" "cg  cg   cg    introg introg introg" "cg  cg   cg    introg introg introg" ".  .    .       . . .";
   }
   .impala-intro .introg {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-top: 7rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: "Work Sans", sans-serif;
   }
   .impala-nov {
     width: 100%;
@@ -13485,8 +13201,17 @@ body {
 .impala-merch {
   height: auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20vh 10vh 40vh 40vh 10vh 10vh;
-  grid-template-areas: "h3-merch h3-merch h3-merch" ".   . . " "merch-1   merch-3  merch-6 " " merch-2  merch-4  merch-5 " " . . . " " . button-merch .";
+  grid-template-rows: 30vh 30vh 80vh 1vh 10vh 10vh 10vh;
+  grid-template-areas: "h3-merch h3-merch h3-merch" ". . ." "merch-1  merch-3 merch-5" "merch-6  merch-4 merch-2" ". . . " "button-merch button-merch button-merch" ". . .";
+}
+.impala-merch .h3-merch {
+  background-image: url(../multimedia/background/bgbase1.jpg);
+}
+.impala-merch .button-merch {
+  font-size: 1.5rem;
+  padding-top: 0;
+  padding-left: 1%;
+  padding-right: 2%;
 }
 .impala-merch .merch-1 {
   width: 15rem;
@@ -13496,11 +13221,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.impala-merch .merch-1 .nowrap {
+  font-size: 1.2rem;
+}
 .impala-merch .merch-2 {
   width: 15rem;
   background-color: #8B36A7;
   margin-top: 2rem;
   margin: auto;
+}
+.impala-merch .merch-2 .nowrap {
+  font-size: 1.2rem;
 }
 .impala-merch .merch-3 {
   width: 15rem;
@@ -13508,11 +13239,17 @@ body {
   margin-top: 2rem;
   margin: auto;
 }
+.impala-merch .merch-3 .nowrap {
+  font-size: 1.2rem;
+}
 .impala-merch .merch-4 {
   width: 15rem;
   background-color: #FF1493;
   margin-top: 2rem;
   margin: auto;
+}
+.impala-merch .merch-4 .nowrap {
+  font-size: 1.2rem;
 }
 .impala-merch .merch-5 {
   width: 15rem;
@@ -13520,11 +13257,17 @@ body {
   margin-top: 2rem;
   margin: auto;
 }
+.impala-merch .merch-5 .nowrap {
+  font-size: 1.2rem;
+}
 .impala-merch .merch-6 {
   width: 15rem;
   background-color: #D468E4;
   margin-top: 2rem;
   margin: auto;
+}
+.impala-merch .merch-6 .nowrap {
+  font-size: 1.2rem;
 }
 
 /*ComunidadPage*/
@@ -13533,7 +13276,7 @@ body {
   justify-items: center;
   align-content: space-evenly;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg8.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg7.jpg);
   background-size: cover;
   height: auto;
   grid-template-columns: repeat repeat(1, 1fr);
@@ -13586,6 +13329,7 @@ body {
 }
 .communitypage .suscription form .input-submit .text-sub {
   background-color: rgb(0, 1, 2);
+  margin-top: 3rem;
 }
 .communitypage .suscription form .input-submit .input-sub {
   background-color: rgb(0, 1, 2);
@@ -13593,6 +13337,7 @@ body {
 
 /*DiscografíaPage*/
 #discs {
+  width: 100%;
   display: grid;
   justify-items: center;
   align-content: space-evenly;
@@ -13749,6 +13494,9 @@ body {
   grid-template-rows: 15vh 30vh 50vh 50vh 10vh;
   grid-template-areas: ". . ." "h3-tour h3-tour h3-tour" "tourg1 tourg2 tourg3" "tourg4 tourg5 tourg6";
 }
+#tourpage .h3-tour {
+  background: none;
+}
 #tourpage .h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
   justify-content: center;
 }
@@ -13765,48 +13513,69 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
   background-size: cover;
   height: auto;
-  grid-template-columns: repeat repeat(3, 1fr);
-  grid-template-rows: 10vh 30vh 50vh 50vh;
-  grid-template-areas: ". . ." "h3-merch h3-merch h3-merch" "merch-1 merch-2 merch-3 " "merch-4 merch-5 merch-6";
-  grid-gap: 0rem;
+  grid-template-columns: repeat repeat(2, 1fr);
+  grid-template-rows: 50vh 100vh 100vh 100vh 50vh;
+  grid-template-areas: "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
+}
+#merchpage .h3-merch {
+  background: none;
+  margin-top: 10rem;
 }
 #merchpage .merch-1 {
-  width: 15rem;
+  width: 30rem;
   background-color: #9950B8;
   margin-top: 2rem;
   margin: auto;
   justify-content: center;
   align-items: center;
 }
+#merchpage .merch-1 .nowrap {
+  font-size: 1.4rem;
+}
 #merchpage .merch-2 {
-  width: 15rem;
+  width: 30rem;
   background-color: #8B36A7;
   margin-top: 2rem;
   margin: auto;
 }
+#merchpage .merch-2 .nowrap {
+  font-size: 1.4rem;
+}
 #merchpage .merch-3 {
-  width: 15rem;
+  width: 30rem;
   background-color: #ED51C6;
   margin-top: 2rem;
   margin: auto;
 }
+#merchpage .merch-3 .nowrap {
+  font-size: 1.4rem;
+}
 #merchpage .merch-4 {
-  width: 15rem;
+  width: 30rem;
   background-color: #FF1493;
   margin-top: 2rem;
   margin: auto;
 }
+#merchpage .merch-4 .nowrap {
+  font-size: 1.4rem;
+}
 #merchpage .merch-5 {
-  width: 15rem;
+  width: 30rem;
   background-color: #DF41E9;
   margin-top: 2rem;
   margin: auto;
 }
+#merchpage .merch-5 .nowrap {
+  font-size: 1.4rem;
+}
 #merchpage .merch-6 {
-  width: 15rem;
+  width: 30rem;
   background-color: #D468E4;
   margin-top: 2rem;
   margin: auto;
+}
+#merchpage .merch-6 .nowrap {
+  font-size: 1.4rem;
 }
 #merchpage .button-merch {
   display: none;
@@ -13819,6 +13588,8 @@ body {
 @media (min-width: 769px) and (max-width: 992px) {
   body {
     overflow-x: hidden;
+    background-image: url(../multimedia/background/bgbase1.jpg);
+    background-repeat: repeat;
   }
   .navbar .logo img {
     width: 13rem;
@@ -13844,6 +13615,10 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .impala-tour {
+    grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
+    grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
+  }
   .impala-nov {
     width: 100%;
     height: auto;
@@ -13865,6 +13640,21 @@ body {
     width: 11.5rem;
     height: 11.5rem;
     padding: 0.5rem;
+  }
+  .impala-merch {
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30vh 30vh 80vh 1vh 10vh 10vh 10vh;
+    grid-template-areas: "h3-merch h3-merch h3-merch" ". . ." "merch-1  merch-3 merch-5" "merch-6  merch-4 merch-2" ". . . " "button-merch button-merch button-merch" ". . .";
+  }
+  .impala-merch .h3-merch {
+    background-image: url(../multimedia/background/bgbase1.jpg);
+  }
+  .impala-merch .button-merch {
+    font-size: 1.5rem;
+    padding-top: 0;
+    padding-left: 1%;
+    padding-right: 2%;
   }
   /*ComunidadPage*/
   .communitypage {
@@ -14104,16 +13894,13 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
     background-size: cover;
     height: auto;
-    grid-template-columns: repeat repeat(3, 1fr);
-    grid-template-rows: 20vh 30vh 50vh 50vh;
-    grid-template-areas: ". . ." "h3-merch h3-merch h3-merch" "merch-1 merch-2 merch-3 " "merch-4 merch-5 merch-6";
-    grid-gap: 0rem;
+    grid-template-columns: repeat repeat(2, 1fr);
+    grid-template-rows: 40vh 70vh 70vh 70vh 70vh;
+    grid-template-areas: "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
   }
   #merchpage .h3-merch {
     background: none;
-  }
-  #merchpage .merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
-    justify-content: center;
+    margin-top: 10rem;
   }
   #merchpage .button-merch {
     display: none;
@@ -14127,6 +13914,7 @@ body {
   body {
     overflow-x: hidden;
     width: 768px;
+    background-image: url(../multimedia/background/bgbase1.jpg);
   }
   header {
     width: 100%;
@@ -14141,7 +13929,7 @@ body {
   }
   .impala-intro {
     height: auto;
-    grid-template-rows: repeat(5, 15.5vh);
+    grid-template-rows: repeat(5, 18.5vh);
     grid-template-areas: ". 			.   	 .    . . ." "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg    introg introg introg" "cg  		cg     introg    introg introg introg" "cg  		cg   	 introg		 introg introg introg";
   }
   .impala-intro .introg {
@@ -14175,59 +13963,17 @@ body {
   .impala-tour {
     height: auto;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: 20vh 50vh 50vh 50vh 25vh 10vh;
+    grid-template-rows: 20vh 50vh 50vh 50vh 30vh 10vh;
     grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour" ". .";
   }
   .impala-merch {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 20vh 10vh 40vh 40vh 40vh 10vh 10vh 10vh;
-    grid-template-areas: "h3-merch h3-merch" ". . " "merch-1  merch-3 " "merch-5  merch-4 " "merch-6  merch-2 " ". ." " button-merch  button-merch " ". .";
+    grid-template-rows: 30vh 30vh 120vh 1vh 50vh 10vh 10vh 10vh;
+    grid-template-areas: "h3-merch h3-merch" ". . " "merch-1  merch-3" "merch-5  merch-4" "merch-6  merch-2" "button-merch  button-merch" ". .";
   }
-  .impala-merch .merch-1 {
-    width: 30rem;
-    background-color: #9950B8;
-    margin-left: 6rem;
-  }
-  .impala-merch .merch-1 img {
-    max-width: 20rem;
-  }
-  .impala-merch .merch-2 {
-    width: 30rem;
-    background-color: #8B36A7;
-  }
-  .impala-merch .merch-2 img {
-    max-width: 20rem;
-  }
-  .impala-merch .merch-3 {
-    width: 30rem;
-    background-color: #ED51C6;
-  }
-  .impala-merch .merch-3 img {
-    max-width: 17rem;
-  }
-  .impala-merch .merch-4 {
-    width: 30rem;
-    background-color: #FF1493;
-  }
-  .impala-merch .merch-4 img {
-    max-width: 17rem;
-  }
-  .impala-merch .merch-5 {
-    width: 30rem;
-    background-color: #DF41E9;
-    margin-left: 6rem;
-  }
-  .impala-merch .merch-5 img {
-    max-width: 16rem;
-  }
-  .impala-merch .merch-6 {
-    width: 30rem;
-    background-color: #D468E4;
-    margin-left: 6rem;
-  }
-  .impala-merch .merch-6 img {
-    max-width: 15rem;
+  .impala-merch .h3-merch {
+    background-image: url(../multimedia/background/bgbase1.jpg);
   }
   .impala-merch .button-merch {
     font-size: 1.5rem;
@@ -14235,13 +13981,16 @@ body {
     padding-left: 1%;
     padding-right: 2%;
   }
-  .impala-merch .button-merch .pie-img {
+  .impala-merch .pie-img {
     width: 13.25em;
     height: 7.06em;
   }
-  .impala-merch .button-merch .pie-socialmedia a img {
+  .impala-merch .pie-socialmedia a img {
     width: 3.1rem;
     height: 3.1rem;
+  }
+  .footerg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/background/bgbase1.jpg);
   }
   /*ComunidadPage*/
   .communitypage {
@@ -14482,12 +14231,12 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
-    grid-template-rows: 15vh 0vh 20vh 50vh 50vh 50vh;
-    grid-template-areas: ". ." "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
-    grid-gap: 0rem;
+    grid-template-rows: 40vh 80vh 80vh 80vh 80vh;
+    grid-template-areas: "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
   }
-  #merchpage .merch-1 .merch-2 .merch-3 .merch-4 .merch-5 .merch-6 {
-    justify-content: center;
+  #merchpage .h3-merch {
+    background: none;
+    margin-top: 10rem;
   }
   #merchpage .button-merch {
     display: none;
@@ -14502,9 +14251,11 @@ body {
     overflow-x: hidden;
     width: 576px;
     height: auto;
+    background-image: url(../multimedia/background/bgbase1.jpg);
   }
   header {
     width: 100%;
+    background-image: url(../multimedia/background/bgbase.jpg);
   }
   .impala-intro {
     width: 100%;
@@ -14560,20 +14311,21 @@ body {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 40vh;
-    grid-template-areas: "h3-tour" "tourg1" "tourg2" "tourg3" "tourg4" "tourg5" "tourg6" "button-tour";
+    grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 40vh 10ch;
+    grid-template-areas: "h3-tour" "tourg1" "tourg2" "tourg3" "tourg4" "tourg5" "tourg6" "button-tour" ".";
     justify-items: center;
     align-items: center;
   }
   .impala-tour .h3-tour {
     padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/background/bgbase1.jpg);
   }
   .impala-merch {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 20vh 35vh 35vh 35vh 35vh 35vh 35vh 30vh;
     grid-template-areas: "h3-merch" "merch-1 " "merch-2 " "merch-3 " "merch-4 " "merch-5 " "merch-6 " "button-merch";
     justify-items: center;
     align-items: center;
@@ -14581,36 +14333,67 @@ body {
   }
   .impala-merch .h3-merch {
     padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bgbase1.jpg);
   }
   .merch-1 {
-    width: 20rem;
+    width: 30rem;
     background-color: #9950B8;
     max-width: 200px;
     margin-left: 0rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  .merch-1 .nowrap {
+    font-size: 1.2rem;
   }
   .merch-2 {
-    width: 20rem;
+    width: 60rem;
     background-color: #8B36A7;
-    max-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .merch-2 .nowrap {
+    font-size: 1.2rem;
   }
   .merch-3 {
-    width: 20rem;
+    width: 30rem;
     background-color: #ED51C6;
     max-width: 200px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .merch-3 .nowrap {
+    font-size: 1.2rem;
   }
   .merch-4 {
-    width: 20rem;
+    width: 30rem;
     background-color: #FF1493;
     max-width: 200px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .merch-4 .nowrap {
+    font-size: 1.2rem;
   }
   .merch-5 {
-    width: 20rem;
+    width: 30rem;
     background-color: #DF41E9;
+    text-align: center;
+    font-weight: 700;
+  }
+  .merch-5 .nowrap {
+    font-size: 1.2rem;
   }
   .merch-6 {
-    width: 20rem;
+    width: 30rem;
     background-color: #D468E4;
+    text-align: center;
+    font-weight: 700;
+  }
+  .merch-6 .nowrap {
+    font-size: 1.2rem;
   }
   .button-merch {
     padding-left: 0rem;
@@ -14648,20 +14431,23 @@ body {
     background-size: cover;
     height: 60rem;
     grid-template-columns: repeat repeat(1, 100%);
-    grid-template-rows: 10vh 40vh 2vh;
+    grid-template-rows: 15vh 50vh 10vh;
     grid-template-areas: "pie-img" "pie-socialmedia" "footer-text";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/background/bgbase1.jpg);
   }
   .footerg .pie-img {
     grid-area: pie-img;
-    width: 15rem;
+    width: 20rem;
     height: auto;
+    padding: 2rem;
   }
   .footerg .pie-socialmedia {
     grid-area: pie-socialmedia;
-    max-width: 4rem;
+    max-width: 3rem;
+    padding-top: 2rem;
   }
   .footerg .pie-socialmedia a img {
-    width: 4rem;
+    width: 3rem;
     height: auto;
   }
   .footerg .footer-text {
@@ -14669,6 +14455,7 @@ body {
     font-size: 1.5rem;
     font-style: "Montserrat", sans-serif;
     text-align: center;
+    padding-top: 2rem;
   }
   /*ComunidadPage*/
   .communitypage {
@@ -14728,6 +14515,7 @@ body {
     align-items: center;
   }
   .communitypage .suscription form .input-submit .text-sub {
+    margin-top: 3rem;
     background-color: rgb(0, 1, 2);
   }
   .communitypage .suscription form .input-submit .input-sub {
@@ -14743,7 +14531,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 15vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
+    grid-template-rows: 25vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
     grid-template-areas: "." "h1-d" "disc-1" "disc-2" "disc-3" "disc-4" "disc-5" "disc-6" "disc-7" "disc-8";
   }
   #discs .h1-d {
@@ -14903,7 +14691,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 14vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 14vh 112.5vh 50vh 50vh 50vh 50vh 50vh 50vh;
     grid-template-areas: "." "h3-merch" "merch-1" "merch-2" "merch-3" "merch-4" "merch-5" "merch-6";
     grid-gap: 0rem;
   }
@@ -14911,42 +14699,65 @@ body {
     background: none;
   }
   #merchpage .merch-1 {
-    width: 15rem;
+    width: 60rem;
     background-color: #9950B8;
-    margin-top: 2rem;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    max-width: 17rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 40rem;
+  }
+  #merchpage .merch-1 .nowrap {
+    font-size: 1.2rem;
   }
   #merchpage .merch-2 {
-    width: 15rem;
+    width: 60rem;
     background-color: #8B36A7;
-    margin-top: 2rem;
-    margin: auto;
+    max-width: 17rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  #merchpage .merch-2 .nowrap {
+    font-size: 1.2rem;
   }
   #merchpage .merch-3 {
-    width: 15rem;
+    width: 30rem;
     background-color: #ED51C6;
-    margin-top: 2rem;
-    margin: auto;
+    max-width: 17rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  #merchpage .merch-3 .nowrap {
+    font-size: 1.2rem;
   }
   #merchpage .merch-4 {
-    width: 15rem;
+    width: 30rem;
     background-color: #FF1493;
-    margin-top: 2rem;
-    margin: auto;
+    max-width: 17rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  #merchpage .merch-4 .nowrap {
+    font-size: 1.2rem;
   }
   #merchpage .merch-5 {
-    width: 15rem;
+    width: 30rem;
     background-color: #DF41E9;
-    margin-top: 2rem;
-    margin: auto;
+    max-width: 17rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  #merchpage .merch-5 .nowrap {
+    font-size: 1.2rem;
   }
   #merchpage .merch-6 {
-    width: 15rem;
+    width: 30rem;
     background-color: #D468E4;
-    margin-top: 2rem;
-    margin: auto;
+    max-width: 17rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  #merchpage .merch-6 .nowrap {
+    font-size: 1.2rem;
   }
   #merchpage .button-merch {
     display: none;
@@ -14975,8 +14786,10 @@ body {
     justify-items: center;
     justify-content: space-evenly;
     align-content: space-evenly;
-    background-color: #7F7086;
-    margin-top: 62rem;
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid 2px rgb(243, 243, 243);
+    border-left: solid 2px rgb(243, 243, 243);
+    margin-top: 64rem;
     padding-bottom: 10rem;
     transform: translateX(170%);
     transition: all 1s;
@@ -14988,6 +14801,7 @@ body {
     margin-right: 5.7rem;
     font-size: 1.8rem;
     line-height: 2.4rem;
+    color: rgb(243, 243, 243);
   }
   .navbar .menu-toggle {
     transform: translatex(40%);
