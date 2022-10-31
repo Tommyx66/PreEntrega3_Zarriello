@@ -518,7 +518,7 @@
 @include tablet{
 	body{
 		overflow-x: hidden;
-		width: 768px;
+		width: 100%;
 		background-image: url(../multimedia/background/bgbase1.jpg)
 	}
 	header{
@@ -729,7 +729,7 @@
 @include smartphone{	
 	body{
 		overflow-x: hidden;
-		width: 576px;
+		width: 100%;
 		height: auto;
 		background-image: url(../multimedia/background/bgbase1.jpg);
 	}
