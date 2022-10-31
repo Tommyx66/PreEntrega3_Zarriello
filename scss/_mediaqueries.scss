@@ -3,7 +3,7 @@
 /*----------DESKTOP-MD----------*/
 @include desktop-md{
 	body{
-		overflow-x: hidden;
+		
 		background-image: url(../multimedia/background/bgbase1.jpg);
 		background-repeat: repeat;
 		background-attachment: fixed;
@@ -312,7 +312,7 @@
 /*----------DESKTOP-SM----------*/
 @include desktop-sm{
 	body{
-		overflow-x: hidden;
+		
 		background-image: url(../multimedia/background/bgbase1.jpg);
 		background-repeat: repeat;
 	}
@@ -517,7 +517,7 @@
 /*----------TABLET----------*/
 @include tablet{
 	body{
-		overflow-x: hidden;
+		
 		width: 100%;
 		background-image: url(../multimedia/background/bgbase1.jpg)
 	}
@@ -728,8 +728,8 @@
 /*----------SMARTPHONE----------*/
 @include smartphone{	
 	body{
-		overflow-x: hidden;
-		width: 80%;
+		
+		width: 100%;
 		height: auto;
 		background-image: url(../multimedia/background/bgbase1.jpg);
 	}
@@ -739,10 +739,10 @@
 
 	}
 	.impala-intro{
-		width: 80%;
+		width: 100%;
 		height: auto;
 		grid-template-columns:repeat(1, 1fr);
-		grid-template-rows:4vh 10vh 10vh 40vh 20vh 20vh 15vh;
+		grid-template-rows:4vh 10vh 10vh 40vh 20vh 20vh 20vh;
 		grid-template-areas: 
 		"."
 		"cg"
@@ -770,7 +770,7 @@
 		}
 	}
 	.impala-nov{
-		width: 80%;
+		width: 100%;
 		height: auto;
 		grid-template-columns: repeat(1, 1fr) ;
 		grid-template-rows: 40vh 70vh 80vh;
@@ -794,7 +794,7 @@
 		}
 	}
 	.impala-tour{
-		width: 80%;
+		width: 100%;
 		height: auto;
 		grid-template-columns:repeat(1, 1fr);
 		grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 40vh 10ch;
@@ -818,7 +818,7 @@
 		}
 	}
 	.impala-merch{
-		width: 80%;
+		width: 100%;
 		height: auto;
 		grid-template-columns:repeat(1, 1fr) ;
 		grid-template-rows: 20vh 35vh 35vh 35vh 35vh 35vh 35vh 30vh;
@@ -897,7 +897,7 @@
 		@include button(0rem,0);
 	}
 	.footerg{
-		width: 80%;
+		width: 100%;
 		@include gridPage(none,60rem,repeat(1,100%),15vh 50vh 10vh , 
 			"pie-img"
 			"pie-socialmedia"
@@ -929,7 +929,7 @@
 
 	/*ComunidadPage*/
 	.communitypage{
-		width: 80%;
+		width: 100%;
 		@include gridPage(url(../multimedia/background/bg7.jpg),auto,repeat(1,1fr),30vh 30vh 80vh, 
 			"."
 			"h1-com"
@@ -966,7 +966,7 @@
 	}
 	/*DiscografíaPage*/
 	#discs{
-		width: 80%;
+		width: 100%;
 		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(1,1fr),25vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh, 
 			"."
 			"h1-d"
@@ -1025,7 +1025,7 @@
 	}
 	/*MerchPage*/
 	#merchpage{
-		width: 80%;
+		width: 100%;
 		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(1,1fr),14vh 112.5vh 50vh 50vh 50vh 50vh 50vh 50vh, 
 			"."
 			"h3-merch"
