@@ -729,7 +729,7 @@
 @include smartphone{	
 	body{
 		overflow-x: hidden;
-		width: 100%;
+		width: 80%;
 		height: auto;
 		background-image: url(../multimedia/background/bgbase1.jpg);
 	}
@@ -739,9 +739,9 @@
 
 	}
 	.impala-intro{
-		width: 100%;
+		width: 80%;
 		height: auto;
-		grid-template-columns:repeat(1, 100%);
+		grid-template-columns:repeat(1, 1fr);
 		grid-template-rows:4vh 10vh 10vh 40vh 20vh 20vh 15vh;
 		grid-template-areas: 
 		"."
@@ -770,9 +770,9 @@
 		}
 	}
 	.impala-nov{
-		width: 100%;
+		width: 80%;
 		height: auto;
-		grid-template-columns: repeat(1, 100%) ;
+		grid-template-columns: repeat(1, 1fr) ;
 		grid-template-rows: 40vh 70vh 80vh;
 		grid-template-areas: 
 		" icong "
@@ -794,9 +794,9 @@
 		}
 	}
 	.impala-tour{
-		width: 100%;
+		width: 80%;
 		height: auto;
-		grid-template-columns:repeat(1, 100%);
+		grid-template-columns:repeat(1, 1fr);
 		grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 40vh 10ch;
 		grid-template-areas:
 		"h3-tour"
@@ -818,9 +818,9 @@
 		}
 	}
 	.impala-merch{
-		width: 100%;
+		width: 80%;
 		height: auto;
-		grid-template-columns:repeat(1, 100%) ;
+		grid-template-columns:repeat(1, 1fr) ;
 		grid-template-rows: 20vh 35vh 35vh 35vh 35vh 35vh 35vh 30vh;
 		grid-template-areas:
 		"h3-merch" 
@@ -897,7 +897,7 @@
 		@include button(0rem,0);
 	}
 	.footerg{
-		width: 100%;
+		width: 80%;
 		@include gridPage(none,60rem,repeat(1,100%),15vh 50vh 10vh , 
 			"pie-img"
 			"pie-socialmedia"
@@ -929,6 +929,7 @@
 
 	/*ComunidadPage*/
 	.communitypage{
+		width: 80%;
 		@include gridPage(url(../multimedia/background/bg7.jpg),auto,repeat(1,1fr),30vh 30vh 80vh, 
 			"."
 			"h1-com"
@@ -965,6 +966,7 @@
 	}
 	/*DiscografíaPage*/
 	#discs{
+		width: 80%;
 		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(1,1fr),25vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh, 
 			"."
 			"h1-d"
@@ -1016,12 +1018,14 @@
 			"tourg5"
 			"tourg6"
 			"button-tour");
+		width: 80%;
 		.h3-tour{
 			background: none;
 		}
 	}
 	/*MerchPage*/
 	#merchpage{
+		width: 80%;
 		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(1,1fr),14vh 112.5vh 50vh 50vh 50vh 50vh 50vh 50vh, 
 			"."
 			"h3-merch"
