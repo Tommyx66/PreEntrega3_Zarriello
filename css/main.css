@@ -14675,7 +14675,7 @@ body {
     grid-template-columns: repeat repeat(1, 1fr);
     grid-template-rows: 15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh;
     grid-template-areas: "." "h3-tour" "tourg1" "tourg2" "tourg3" "tourg4" "tourg5" "tourg6" "button-tour";
-    width: 80%;
+    width: 100%;
   }
   #tourpage .h3-tour {
     background: none;
