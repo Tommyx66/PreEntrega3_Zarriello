@@ -3,7 +3,7 @@
 /*----------DESKTOP-MD----------*/
 @include desktop-md{
 	body{
-		
+		overflow-x: hidden;
 		background-image: url(../multimedia/background/bgbase1.jpg);
 		background-repeat: repeat;
 		background-attachment: fixed;
@@ -312,7 +312,7 @@
 /*----------DESKTOP-SM----------*/
 @include desktop-sm{
 	body{
-		
+		overflow-x: hidden;
 		background-image: url(../multimedia/background/bgbase1.jpg);
 		background-repeat: repeat;
 	}
@@ -516,500 +516,401 @@
 }
 /*----------TABLET----------*/
 @include tablet{
-	body{
-		
+	body{	
+		h1{
+			font-size: 5.2rem;
+		}
 		width: 100%;
 		background-image: url(../multimedia/background/bgbase1.jpg)
 	}
 	header{
 		width: 100%;
+		position:relative;
 	}
 	.navbar{
-		.menu{
-			padding: 4rem 2rem 4rem 13rem;  
-		}
-		a{
-			font-size: .8rem;
-			line-height: 1.8rem;
-			padding: .5rem;
-		}
-	}
-	
-	
-	.impala-intro{
-		height: auto;
-		grid-template-rows: repeat(5,18.5vh);
-		grid-template-areas: 
-		". 			.   	 .    . . ."
-		"cg  		cg     introg    introg introg introg"
-		"cg  		cg   	 introg    introg introg introg"
-		"cg  		cg     introg    introg introg introg"
-		"cg  		cg   	 introg		 introg introg introg";
-		
-		.introg{
-			@include sectionpos (1.3rem,7rem,.5rem,1.5rem);
-		}
-	}
-	.impala-nov{
-		width: 100%;
-		height: auto;
-		grid-template-columns: repeat(3, 1fr) ;
-		grid-template-rows: 40vh 80vh 100%;
-		grid-template-areas: 
-		". icong ."
-		". susg ."
-		". leakg .";
-		.logo-music{
-			@include ajustCenter(4rem,0,space-evenly);
-			a img{
-				width: 10.5rem;
-				height: 10.5rem;
-				padding: .8rem;
-			}
-		}
-	}
-	.impala-tour{
-		height: auto;
-		grid-template-columns:repeat (2, 1fr);
-		grid-template-rows: 20vh 50vh 50vh 50vh 30vh 10vh;
-		grid-template-areas:
-		"h3-tour h3-tour"
-		"tourg1 tourg2"
-		"tourg3 tourg4"
-		"tourg5 tourg6"
-		"button-tour button-tour"
-		". ."
-	}
-	.impala-merch{
-		height: auto;
-		grid-template-columns: repeat(2, 1fr) ;
-		grid-template-rows: 30vh 30vh 120vh 1vh 50vh 10vh 10vh 10vh;
-		grid-template-areas:
-		
-		"h3-merch h3-merch"
-		". . "
-		"merch-1  merch-3"
-		"merch-5  merch-4"
-		"merch-6  merch-2"
-		"button-merch  button-merch"
-		". .";
-		.h3-merch{
-			background-image: url(../multimedia/background/bgbase1.jpg);
-		}
-		
-		.button-merch {
-			@include sectionpos (1.5rem,0,1%,2%);
-		}
-		.pie-img{
-			@include sizing (13.25em,7.06em);
-		}
-		.pie-socialmedia a img{
-			@include sizing (3.1rem,3.1rem);
-		}
-	}
-	.footerg{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../multimedia/background/bgbase1.jpg);
-	}
 
-	/*ComunidadPage*/
-	.communitypage{
-		@include gridPage(url(../multimedia/background/bg7.jpg),110rem,repeat(1,1fr),0vh 30vh 80vh, 
-			"."
-			"h1-com"
-			"susg");
-		.h1-com{
-			grid-area:h1-com;
-		}
-		.susg{
-			grid-area:susg;
-		}
-		.suscription{
-			color: $mainColor;
-			@include orgSection (0,15%,0,15%,$secondaryFont,1.4rem,$textRegular,2rem,center,0,0,0);
-			h3{
-				padding-bottom: 5%;
-			}
-			form {
-				label {
-					@include ajustCenter(0,8%,center);
+		.menu{
+			padding-top: 11rem;  
+			margin-right: 8rem;
+			li{
+
+				a{
+					font-size: 1.4rem;	
+					padding-left: 0rem;
+					padding-right: 1.8rem;
+
+
+					text-align: center;
+
+
+					justify-items:space-evenly;
+					align-items:center;}
+
 				}
-				.input-submit{
-					@include ajustCenter(8%,0,center);
-					.text-sub{
-						background-color: rgb(0, 1, 2);
-					}
-					.input-sub{
-						background-color: rgb(0, 1, 2);
-					}
+
+
+			}
+			.logo{
+				margin-bottom: 7rem;
+			}
+
+		}
+
+
+		.impala-intro{
+			height: auto;
+			grid-template-rows: repeat(4,22vh);
+			grid-template-areas: 
+			"cg  		cg     introg    introg introg introg"
+			"cg  		cg   	 introg    introg introg introg"
+			"cg  		cg     introg    introg introg introg"
+			"cg  		cg   	 introg		 introg introg introg";
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+
+			.introg{
+				@include sectionpos (1.3rem,7rem,.5rem,1.5rem);
+			}
+		}
+		.impala-nov{
+			background:none;
+			width: 100%;
+			height: auto;
+			grid-template-columns: repeat(3, 1fr) ;
+			grid-template-rows: 40vh 80vh 100%;
+			grid-template-areas: 
+			". icong ."
+			". susg ."
+			". leakg .";
+			.logo-music{
+				@include ajustCenter(4rem,0,space-evenly);
+				a img{
+					width: 10.5rem;
+					height: 10.5rem;
+					padding: .8rem;
 				}
 			}
 		}
-	}
-	/*DiscografíaPage*/
-	#discs{
-		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(2,1fr),30vh 30vh 55vh 55vh 55vh 55vh 38vh, 
-			". ."
-			"h1-d h1-d"
-			"disc-1 disc-2"
-			"disc-3 disc-4"
-			"disc-5 disc-6"
-			"disc-7 disc-8"
-			". .");
-		.h1-d{
-			grid-area:h1-d;
-		}
-		.disc-1{
-			@include discPage(disc-1, 1.4rem, 18rem, 20rem, 1rem)
-		}
-		.disc-2{
-			@include discPage(disc-2, 1.4rem, 20rem, 20rem, 1rem)
-		}
-		.disc-3{
-			@include discPage(disc-3, 1.4rem, 20rem, 20rem, 1rem)	
-		}
-		.disc-4{
-			@include discPage(disc-4, 1.4rem, 20rem, 20rem, 1rem)	
-		}
-		.disc-5{
-			@include discPage(disc-5, 1.4rem, 20rem, 20rem, 1rem)	
-		}
-		.disc-6{
-			@include discPage(disc-6, 1.4rem, 20rem, 20rem, 1rem)	
-		}
-		.disc-7{
-			@include discPage(disc-7, 1.4rem, 20rem, 20rem, 1rem)	
-		}
-		.disc-8{
-			@include discPage(disc-8, 1.4rem, 20rem, 20rem, 1rem)	
-		}
-	}
-	/*TourPage*/
-	#tourpage{
-		@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(2,1fr),20vh 40vh 50vh 50vh 50vh, 
-			". ."
+		.impala-tour{
+			background:none;
+			height: auto;
+			grid-template-columns:repeat (2, 1fr);
+			grid-template-rows: 20vh 50vh 50vh 50vh 30vh 10vh;
+			grid-template-areas:
 			"h3-tour h3-tour"
 			"tourg1 tourg2"
 			"tourg3 tourg4"
 			"tourg5 tourg6"
-			);
-		.h3-tour{
-			background: none;
-		}
-		.h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
-			justify-content:center;
-		}
-		#button-tour{
-			display: none;
-		}
-	}
-	/*MerchPage*/
-	#merchpage{
-		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(2,1fr), 40vh 80vh 80vh 80vh 80vh, 
-			"h3-merch h3-merch"
+			"button-tour button-tour"
 			". ."
-			"merch-1 merch-2"
-			"merch-3 merch-4"
-			"merch-5 merch-6"
-			);
+		}
+		.impala-merch{
+			background:none;
+			height: auto;
+			grid-template-columns: repeat(2, 1fr) ;
+			grid-template-rows: 30vh 30vh 120vh 1vh 50vh 10vh 10vh 10vh;
+			grid-template-areas:
 
-		.h3-merch{
+			"h3-merch h3-merch"
+			". . "
+			"merch-1  merch-3"
+			"merch-5  merch-4"
+			"merch-6  merch-2"
+			"button-merch  button-merch"
+			". .";
+			.h3-merch{
+				background:none;
+			}
+
+			.button-merch {
+				@include sectionpos (1.5rem,0,1%,2%);
+			}
+			.pie-img{
+				@include sizing (13.25em,7.06em);
+			}
+			.pie-socialmedia a img{
+				@include sizing (3.1rem,3.1rem);
+			}
+		}
+		.footerg{
+			background:none;
+		}
+
+		/*ComunidadPage*/
+		.communitypage{
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			@include gridPage(url(../multimedia/background/bg7.jpg),110rem,repeat(1,1fr),0vh 30vh 80vh, 
+				"."
+				"h1-com"
+				"susg");
+			.h1-com{
+				grid-area:h1-com;
+			}
+			.susg{
+				grid-area:susg;
+			}
+			.suscription{
+				color: $mainColor;
+				@include orgSection (0,15%,0,15%,$secondaryFont,1.4rem,$textRegular,2rem,center,0,0,0);
+				h3{
+					padding-bottom: 5%;
+				}
+				form {
+					label {
+						@include ajustCenter(0,8%,center);
+					}
+					.input-submit{
+						@include ajustCenter(8%,0,center);
+						.text-sub{
+							background-color: rgb(0, 1, 2);
+						}
+						.input-sub{
+							background-color: rgb(0, 1, 2);
+						}
+					}
+				}
+			}
+		}
+		/*DiscografíaPage*/
+		#discs{
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(2,1fr),30vh 30vh 55vh 55vh 55vh 55vh 38vh, 
+				". ."
+				"h1-d h1-d"
+				"disc-1 disc-2"
+				"disc-3 disc-4"
+				"disc-5 disc-6"
+				"disc-7 disc-8"
+				". .");
+			.h1-d{
+				grid-area:h1-d;
+			}
+			.disc-1{
+				@include discPage(disc-1, 1.4rem, 18rem, 20rem, 1rem)
+			}
+			.disc-2{
+				@include discPage(disc-2, 1.4rem, 20rem, 20rem, 1rem)
+			}
+			.disc-3{
+				@include discPage(disc-3, 1.4rem, 20rem, 20rem, 1rem)	
+			}
+			.disc-4{
+				@include discPage(disc-4, 1.4rem, 20rem, 20rem, 1rem)	
+			}
+			.disc-5{
+				@include discPage(disc-5, 1.4rem, 20rem, 20rem, 1rem)	
+			}
+			.disc-6{
+				@include discPage(disc-6, 1.4rem, 20rem, 20rem, 1rem)	
+			}
+			.disc-7{
+				@include discPage(disc-7, 1.4rem, 20rem, 20rem, 1rem)	
+			}
+			.disc-8{
+				@include discPage(disc-8, 1.4rem, 20rem, 20rem, 1rem)	
+			}
+		}
+		/*TourPage*/
+		#tourpage{
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(2,1fr),20vh 40vh 50vh 50vh 50vh, 
+				". ."
+				"h3-tour h3-tour"
+				"tourg1 tourg2"
+				"tourg3 tourg4"
+				"tourg5 tourg6"
+				);
+			.h3-tour{
+				background: none;
+			}
+			.h3-tour .tourg1 .tourg2 .tourg3 .tourg4 .tourg5 .tourg6 {
+				justify-content:center;
+			}
+			#button-tour{
+				display: none;
+			}
+		}
+		/*MerchPage*/
+		#merchpage{
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(2,1fr), 40vh 80vh 80vh 80vh 80vh, 
+				"h3-merch h3-merch"
+				". ."
+				"merch-1 merch-2"
+				"merch-3 merch-4"
+				"merch-5 merch-6"
+				);
+
+			.h3-merch{
+				background: none;
+				margin-top: 10rem;
+			}
+
+			.merch-1{
+				@include mediamerch(60rem, #9950B8);
+				max-width: 27.5rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-2{
+				@include mediamerch(60rem, #8B36A7);
+				max-width: 27.5rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-3{
+				@include mediamerch(60rem, #ED51C6);
+				max-width: 27.5rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-4{
+				@include mediamerch(60rem, #FF1493);
+				max-width: 27.5rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-5{
+				@include mediamerch(60rem, #DF41E9);
+				max-width: 27.5rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-6{
+				@include mediamerch(60rem, #D468E4);
+				max-width: 26rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.button-merch{
+				display: none;
+				justify-content:center;
+				justify-items: center;
+				align-items: center;
+			}
+		}
+	}
+	/*----------SMARTPHONE----------*/
+	@include smartphone{	
+		body{
+			h1{
+				font-size: 4rem;
+			}
+			overflow-x: hidden;
+			width: 100%;
+			height: auto;
+			background-image: url(../multimedia/background/bgbase1.jpg);
+		}
+		header{
+			width: 100%;
+			background-image: url(../multimedia/background/bgbase.jpg)
+
+		}
+		.impala-intro{
+			background-repeat: repeat;
+			background-attachment: fixed;
+			width: 100%;
+			height: auto;
+			grid-template-columns:repeat(1, 1fr);
+			grid-template-rows:10vh 20vh 20vh 40vh 40vh 40vh 30vh;
+			grid-template-areas: 
+			"."
+			"cg"
+			"cg"
+			"cg "
+			"introg "
+			"introg "
+			". "
+			;
+			.introg{
+				@include sectionpos (1.3rem,3rem,3rem,3rem);
+			}
+			/*----Carousel----*/
+			.carousel{
+				.carousel-inner{
+					padding: 0rem 2rem;
+					padding-top: 4rem;
+					img{
+						width: 100%;
+						min-height: 34rem;
+						max-height: 34rem;
+						object-fit: cover;
+					}
+				} 
+			}
+		}
+		.impala-nov{
+			width: 100%;
+			height: auto;
+			grid-template-columns: repeat(1, 1fr) ;
+			grid-template-rows: 40vh 80vh 80vh;
+			grid-template-areas: 
+			" icong "
+			" susg "
+			" leakg ";
+			justify-items:center;
+			align-items:center;
+			.icong{
+				justify-content:center;
+				justify-items:center;
+			}
+			.susg{
+				justify-content:center;
+				justify-items:center;
+			}
+			.leakg{
+				justify-content:center;
+				justify-items:center;
+			}
+			.logo-music{
+				@include ajustCenter(6rem,0,space-evenly);
+				a img{
+					width: 6rem;
+					height: 6rem;
+					padding: 1rem;
+					padding-right: 1rem;
+				}
+			}
+			.suscription{
+
+				text-align: center;
+
+			}
+		}
+		.impala-tour{
+			width: 100%;
 			background: none;
-			margin-top: 10rem;
-		}
-
-		.button-merch{
-			display: none;
-			justify-content:center;
-			justify-items: center;
-			align-items: center;
-		}
-	}
-}
-/*----------SMARTPHONE----------*/
-@include smartphone{	
-	body{
-		
-		width: 100%;
-		height: auto;
-		background-image: url(../multimedia/background/bgbase1.jpg);
-	}
-	header{
-		width: 100%;
-		background-image: url(../multimedia/background/bgbase.jpg)
-
-	}
-	.impala-intro{
-		width: 100%;
-		height: auto;
-		grid-template-columns:repeat(1, 1fr);
-		grid-template-rows:4vh 10vh 10vh 40vh 20vh 20vh 20vh;
-		grid-template-areas: 
-		"."
-		"cg"
-		"cg"
-		"cg "
-		"introg "
-		"introg "
-		". "
-		;
-		.introg{
-			@include sectionpos (1.3rem,3rem,3rem,3rem);
-		}
-		/*----Carousel----*/
-		.carousel{
-			.carousel-inner{
-				padding: 0rem 2rem;
-				padding-top: 4rem;
-				img{
-					width: 100%;
-					min-height: 34rem;
-					max-height: 34rem;
-					object-fit: cover;
-				}
-			} 
-		}
-	}
-	.impala-nov{
-		width: 100%;
-		height: auto;
-		grid-template-columns: repeat(1, 1fr) ;
-		grid-template-rows: 40vh 70vh 80vh;
-		grid-template-areas: 
-		" icong "
-		" susg "
-		" leakg ";
-		.logo-music{
-			@include ajustCenter(6rem,0,space-evenly);
-			a img{
-				width: 9rem;
-				height: 9rem;
-				padding: 1rem;
-			}
-		}
-		.suscription{
-			
-			text-align: center;
-			padding: 1rem;
-			
-		}
-	}
-	.impala-tour{
-		width: 100%;
-		height: auto;
-		grid-template-columns:repeat(1, 1fr);
-		grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 40vh 10ch;
-		grid-template-areas:
-		"h3-tour"
-		"tourg1"
-		"tourg2"
-		"tourg3"
-		"tourg4"
-		"tourg5"
-		"tourg6"
-		"button-tour"
-		".";
-
-		justify-items: center;
-		align-items: center;
-		.h3-tour{
-			padding-top: 6rem;
-			padding-bottom: 8rem;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../multimedia/background/bgbase1.jpg);
-		}
-	}
-	.impala-merch{
-		width: 100%;
-		height: auto;
-		grid-template-columns:repeat(1, 1fr) ;
-		grid-template-rows: 20vh 35vh 35vh 35vh 35vh 35vh 35vh 30vh;
-		grid-template-areas:
-		"h3-merch" 
-		"merch-1 "
-		"merch-2 "
-		"merch-3 "
-		"merch-4 "
-		"merch-5 "
-		"merch-6 "
-		"button-merch";
-		justify-items: center;
-		align-items: center;
-		grid-gap: 7rem;
-		.h3-merch{
-			padding-top: 6rem;
-			padding-bottom: 7rem;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../multimedia/background/bgbase1.jpg);
-		}
-	}
-	.merch-1{
-		@include mediamerch(30rem, #9950B8);
-		max-width: 200px;
-		margin-left: 0rem;
-		text-align: center;
-		font-weight: $textBold;
-		.nowrap{
-			font-size: 1.2rem;
-		}
-	}
-	.merch-2{
-		@include mediamerch(60rem, #8B36A7);
-		max-width: 300px;
-		text-align: center;
-		font-weight: $textBold;
-		.nowrap{
-			font-size: 1.2rem;
-		}
-	}
-	.merch-3{
-		@include mediamerch(30rem, #ED51C6);
-		max-width: 200px;
-		text-align: center;
-		font-weight: $textBold;
-		.nowrap{
-			font-size: 1.2rem;
-		}
-	}
-	.merch-4{
-		@include mediamerch(30rem, #FF1493);
-		max-width: 200px;
-		text-align: center;
-		font-weight: $textBold;
-		.nowrap{
-			font-size: 1.2rem;
-		}
-	}
-	.merch-5{
-		@include mediamerch(30rem, #DF41E9);
-		text-align: center;
-		font-weight: $textBold;
-		.nowrap{
-			font-size: 1.2rem;
-		}
-	}
-	.merch-6{
-		@include mediamerch(30rem, #D468E4);
-		text-align: center;
-		font-weight: $textBold;
-		.nowrap{
-			font-size: 1.2rem;
-		}
-	}
-	.button-merch{
-		@include button(0rem,0);
-	}
-	.footerg{
-		width: 100%;
-		@include gridPage(none,60rem,repeat(1,100%),15vh 50vh 10vh , 
-			"pie-img"
-			"pie-socialmedia"
-			"footer-text");
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../multimedia/background/bgbase1.jpg);
-		.pie-img{
-			grid-area: pie-img;
-			@include sizing (20rem,auto);
-			padding: 2rem;
-		}
-		.pie-socialmedia{
-			grid-area:pie-socialmedia;
-			max-width: 3rem;
-			padding-top: 2rem;
-			a {
-				img{
-					@include sizing (3rem,auto);
-				}
-			}
-		}
-		.footer-text{
-			grid-area:footer-text;
-			font-size: 1.5rem;
-			font-style: $mainFont;
-			text-align: center;
-			padding-top: 2rem;
-		}
-	}
-
-	/*ComunidadPage*/
-	.communitypage{
-		width: 100%;
-		@include gridPage(url(../multimedia/background/bg7.jpg),auto,repeat(1,1fr),30vh 30vh 80vh, 
-			"."
-			"h1-com"
-			"susg");
-		.h1-com{
-			grid-area:h1-com;
-		}
-		.susg{
-			grid-area:susg;
-		}
-		.suscription{
-			color: $mainColor;
-			@include orgSection (0,15%,0,15%,$secondaryFont,1.4rem,$textRegular,2rem,center,0,0,0);
-			h3{
-				padding-bottom: 5%;
-			}
-			form {
-				label {
-					@include ajustCenter(0,8%,center);
-				}
-				.input-submit{
-					@include ajustCenter(8%,0,center);
-					.text-sub{
-						
-						margin-top: 3rem;
-						background-color: rgb(0, 1, 2);
-					}
-					.input-sub{
-						background-color: rgb(0, 1, 2);
-					}
-				}
-			}
-		}
-	}
-	/*DiscografíaPage*/
-	#discs{
-		width: 100%;
-		@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(1,1fr),25vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh, 
-			"."
-			"h1-d"
-			"disc-1"
-			"disc-2"
-			"disc-3"
-			"disc-4"
-			"disc-5"
-			"disc-6"
-			"disc-7"
-			"disc-8");
-		.h1-d{
-			grid-area:h1-d;
-		}
-		.disc-1{
-			@include discPage(disc-1, 1.4rem, 18rem, 18rem, 1rem)			   
-		}
-		.disc-2{
-			@include discPage(disc-2, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-		.disc-3{
-			@include discPage(disc-3, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-		.disc-4{
-			@include discPage(disc-4, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-		.disc-5{
-			@include discPage(disc-5, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-		.disc-6{
-			@include discPage(disc-6, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-		.disc-7{
-			@include discPage(disc-7, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-		.disc-8{
-			@include discPage(disc-8, 1.4rem, 18rem, 18rem, 1rem)	
-		}
-	}
-	/*TourPage*/
-	#tourpage{
-		@include gridPage(url(../multimedia/background/bg3.jpg),auto,repeat(1,1fr),15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh, 
-			"."
+			height: auto;
+			grid-template-columns:repeat(1, 1fr);
+			grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 40vh 10ch;
+			grid-template-areas:
 			"h3-tour"
 			"tourg1"
 			"tourg2"
@@ -1017,42 +918,55 @@
 			"tourg4"
 			"tourg5"
 			"tourg6"
-			"button-tour");
-		width: 100%;
-		.h3-tour{
+			"button-tour"
+			".";
 			background: none;
-		}
-	}
-	/*MerchPage*/
-	#merchpage{
-		width: 100%;
-		@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(1,1fr),14vh 112.5vh 50vh 50vh 50vh 50vh 50vh 50vh, 
-			"."
-			"h3-merch"
-			"merch-1"
-			"merch-2"
-			"merch-3"
-			"merch-4"
-			"merch-5"
-			"merch-6");
-		grid-gap: 0rem;
-		.h3-merch{
-			background: none;
-		}
 
+			justify-items: center;
+			align-items: center;
+			.h3-tour{
+				padding-top: 6rem;
+				padding-bottom: 8rem;
+				background: none;
+			}
+		}
+		.impala-merch{
+			width: 100%;
+			background: none;
+			height: auto;
+			grid-template-columns:repeat(1, 1fr) ;
+			grid-template-rows: 20vh 35vh 35vh 35vh 35vh 35vh 35vh 30vh;
+			grid-template-areas:
+			"h3-merch" 
+			"merch-1 "
+			"merch-2 "
+			"merch-3 "
+			"merch-4 "
+			"merch-5 "
+			"merch-6 "
+			"button-merch";
+			justify-items: center;
+			align-items: center;
+			grid-gap: 7rem;
+			.h3-merch{
+				padding-top: 6rem;
+				padding-bottom: 7rem;
+				background: none;
+			}
+		}
 		.merch-1{
-			@include mediamerch(60rem, #9950B8);
-			max-width: 17rem;
+			@include mediamerch(30rem, #9950B8);
+			max-width: 200px;
+			margin-left: 0rem;
 			text-align: center;
 			font-weight: $textBold;
-			margin-top: 40rem;
 			.nowrap{
 				font-size: 1.2rem;
 			}
 		}
 		.merch-2{
 			@include mediamerch(60rem, #8B36A7);
-			max-width: 17rem;
+			max-width: 300px;
 			text-align: center;
 			font-weight: $textBold;
 			.nowrap{
@@ -1061,8 +975,7 @@
 		}
 		.merch-3{
 			@include mediamerch(30rem, #ED51C6);
-
-			max-width: 17rem;
+			max-width: 200px;
 			text-align: center;
 			font-weight: $textBold;
 			.nowrap{
@@ -1071,7 +984,7 @@
 		}
 		.merch-4{
 			@include mediamerch(30rem, #FF1493);
-			max-width: 17rem;
+			max-width: 200px;
 			text-align: center;
 			font-weight: $textBold;
 			.nowrap{
@@ -1080,7 +993,6 @@
 		}
 		.merch-5{
 			@include mediamerch(30rem, #DF41E9);
-			max-width: 17rem;
 			text-align: center;
 			font-weight: $textBold;
 			.nowrap{
@@ -1089,7 +1001,6 @@
 		}
 		.merch-6{
 			@include mediamerch(30rem, #D468E4);
-			max-width: 17rem;
 			text-align: center;
 			font-weight: $textBold;
 			.nowrap{
@@ -1097,52 +1008,270 @@
 			}
 		}
 		.button-merch{
-			display: none;
-			justify-content:center;
-			justify-items: center;
-			align-items: center;
+			@include button(0rem,0);
 		}
-	}
-	/*Boton Hamburguesa*/
-	.navbar {
-		position: relative;
-		z-index:1;
-		.menu-bar{
-			display: block;
-			grid-column: 11/12;
-			font-size: 3rem;
-			cursor: pointer;
-			color:$navColor;
-		}
-		.menu{
-			position: absolute;
-			@include sizing (100%, auto);
-			display: grid;
-			align-items: center;
-			justify-items:center;
-			justify-content:space-evenly;
-			align-content:space-evenly;
-			background-color:$bgColor;
-			border-bottom: solid 2px $mainColor;
-			border-left: solid 2px $mainColor;
-			margin-top: 64rem;
-			padding-bottom: 10rem;
-			
-			transform: translateX(170%);
-			transition: all 1s;
-			li{
-				padding-top: 5.78rem;
-				a{
-					margin-right: 5.7rem;
-					font-size: 1.8rem;
-					line-height: 2.4rem;
-					color: $mainColor;
+		.footerg{
+			width: 100%;
+			background: none;
+			@include gridPage(none,60rem,repeat(1,1fr),15vh 50vh 10vh , 
+				"pie-img"
+				"pie-socialmedia"
+				"footer-text");
+			.pie-img{
+				grid-area: pie-img;
+				@include sizing (20rem,auto);
+				padding: 2rem;
+			}
+			.pie-socialmedia{
+				grid-area:pie-socialmedia;
+				max-width: 3rem;
+				padding-top: 2rem;
+				a {
+					img{
+						@include sizing (3rem,auto);
+					}
 				}
 			}
-			
+			.footer-text{
+				grid-area:footer-text;
+				font-size: 1.5rem;
+				font-style: $mainFont;
+				text-align: center;
+				padding-top: 2rem;
+			}
 		}
-		.menu-toggle{
-			transform: translatex(40%);
+
+		/*ComunidadPage*/
+		.communitypage{
+			width: 100%;
+			@include gridPage(url(../multimedia/background/bg7.jpg),auto,repeat(1,1fr),30vh 30vh 80vh, 
+				"."
+				"h1-com"
+				"susg");
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			.h1-com{
+				grid-area:h1-com;
+			}
+			.susg{
+				grid-area:susg;
+			}
+			.suscription{
+				color: $mainColor;
+				@include orgSection (0,15%,0,15%,$secondaryFont,1.4rem,$textRegular,2rem,center,0,0,0);
+				h3{
+					padding-bottom: 5%;
+				}
+				form {
+					label {
+						@include ajustCenter(0,8%,center);
+					}
+					.input-submit{
+						@include ajustCenter(8%,0,center);
+						.text-sub{
+
+							margin-top: 3rem;
+							background-color: rgb(0, 1, 2);
+						}
+						.input-sub{
+							background-color: rgb(0, 1, 2);
+						}
+					}
+				}
+			}
+		}
+		/*DiscografíaPage*/
+		#discs{
+			width: 100%;
+			@include gridPage(url(../multimedia/background/bg6.jpg),auto,repeat(1,1fr),25vh 20vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh, 
+				"."
+				"h1-d"
+				"disc-1"
+				"disc-2"
+				"disc-3"
+				"disc-4"
+				"disc-5"
+				"disc-6"
+				"disc-7"
+				"disc-8");
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			.h1-d{
+				grid-area:h1-d;
+				text-align: center;
+				justify-content:center;
+				justify-items:center;
+			}
+			.disc-1{
+				@include discPage(disc-1, 1.4rem, 18rem, 18rem, 1rem)			   
+			}
+			.disc-2{
+				@include discPage(disc-2, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+			.disc-3{
+				@include discPage(disc-3, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+			.disc-4{
+				@include discPage(disc-4, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+			.disc-5{
+				@include discPage(disc-5, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+			.disc-6{
+				@include discPage(disc-6, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+			.disc-7{
+				@include discPage(disc-7, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+			.disc-8{
+				@include discPage(disc-8, 1.4rem, 18rem, 18rem, 1rem)	
+			}
+		}
+		/*TourPage*/
+		#tourpage{
+			@include gridPage(url(../multimedia/background/bg2.jpg),auto,repeat(1,1fr),15vh 25vh 50vh 50vh 50vh 50vh 50vh 50vh 38vh, 
+				"."
+				"h3-tour"
+				"tourg1"
+				"tourg2"
+				"tourg3"
+				"tourg4"
+				"tourg5"
+				"tourg6"
+				"button-tour");
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			width: 100%;
+			.h3-tour{
+				background: none;
+			}
+		}
+		/*MerchPage*/
+		#merchpage{
+			width: 100%;
+			@include gridPage(url(../multimedia/background/bg5.jpg),auto,repeat(1,1fr),0vh 90.5vh 50vh 50vh 50vh 50vh 50vh 50vh, 
+				"."
+				"h3-merch"
+				"merch-1"
+				"merch-2"
+				"merch-3"
+				"merch-4"
+				"merch-5"
+				"merch-6");
+			background-repeat: repeat;
+			background-size: center;
+			background-attachment: fixed;
+			grid-gap: 0rem;
+			.h3-merch{
+				background: none;
+			}
+
+			.merch-1{
+				@include mediamerch(60rem, #9950B8);
+				max-width: 17rem;
+				text-align: center;
+				font-weight: $textBold;
+				margin-top: 22rem;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-2{
+				@include mediamerch(60rem, #8B36A7);
+				max-width: 17rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-3{
+				@include mediamerch(30rem, #ED51C6);
+
+				max-width: 17rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-4{
+				@include mediamerch(30rem, #FF1493);
+				max-width: 17rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-5{
+				@include mediamerch(30rem, #DF41E9);
+				max-width: 17rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.merch-6{
+				@include mediamerch(30rem, #D468E4);
+				max-width: 17rem;
+				text-align: center;
+				font-weight: $textBold;
+				.nowrap{
+					font-size: 1.2rem;
+				}
+			}
+			.button-merch{
+				display: none;
+				justify-content:center;
+				justify-items: center;
+				align-items: center;
+			}
+		}
+		/*Boton Hamburguesa*/
+		.navbar {
+			position: relative;
+			z-index:1;
+			.menu-bar{
+				display: block;
+				grid-column: 11/12;
+				font-size: 3rem;
+				cursor: pointer;
+				color:$navColor;
+			}
+			.menu{
+				position: absolute;
+				@include sizing (150%, auto);
+				display: grid;
+				align-items: center;
+				justify-items:center;
+				justify-content:space-evenly;
+				align-content:space-evenly;
+				background-color:$bgColor;
+				border-bottom: solid 2px $mainColor;
+				border-left: solid 2px $mainColor;
+				margin-top: 64rem;
+				padding-bottom: 10rem;
+
+				transform: translateX(170%);
+				transition: all 1s;
+				li{
+					padding-top: 5.78rem;
+					a{
+						margin-right: 2rem;
+						font-size: 1.7rem;
+						line-height: 2.4rem;
+						color: $mainColor;
+					}
+				}
+
+			}
+			.menu-toggle{
+				transform: translatex(-10%);
+			}
 		}
 	}
-}
