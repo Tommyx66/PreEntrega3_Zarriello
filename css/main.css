@@ -12882,6 +12882,8 @@ body {
 }
 #entradas a {
   padding-bottom: 10rem;
+  margin: 0;
+  padding: 0;
   background: none;
   border: 2px solid rgb(224, 210, 255);
   border-radius: 3rem;
@@ -12896,7 +12898,7 @@ body {
 }
 #entradas a:hover {
   box-shadow: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(100, 10, 180);
   color: rgb(243, 243, 243);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
 }
@@ -12911,6 +12913,8 @@ body {
 }
 #button-tour a {
   padding-bottom: 10rem;
+  margin: 0;
+  padding: 0;
   background: none;
   border: 2px solid rgb(224, 210, 255);
   border-radius: 3rem;
@@ -12925,7 +12929,7 @@ body {
 }
 #button-tour a:hover {
   box-shadow: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(100, 10, 180);
   color: rgb(243, 243, 243);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
 }
@@ -12959,6 +12963,8 @@ body {
 }
 .button-merch a {
   padding-bottom: 10rem;
+  margin: 0;
+  padding: 0;
   background: none;
   border: 2px solid rgb(224, 210, 255);
   border-radius: 3rem;
@@ -12973,7 +12979,7 @@ body {
 }
 .button-merch a:hover {
   box-shadow: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(100, 10, 180);
   color: rgb(243, 243, 243);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
 }
@@ -13140,7 +13146,6 @@ body {
 /*----------DESKTOP-MD----------*/
 @media (min-width: 992px) and (max-width: 1900px) {
   body {
-    overflow-x: hidden;
     background-image: url(../multimedia/background/bgbase1.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -13173,8 +13178,8 @@ body {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40vh 60vh 100vh;
-    grid-template-areas: ". icong ." ". susg ." ". leakg .";
+    grid-template-rows: 40vh 80vh 100vh 25vh;
+    grid-template-areas: "icong icong icong" ". susg ." "leakg leakg leakg" ". . .";
   }
   .impala-nov .logo-music {
     display: flex;
@@ -13192,10 +13197,18 @@ body {
     padding: 0.5rem;
   }
   .impala-tour {
+    background: none;
     height: auto;
-    grid-template-columns: repeat 2, 1fr;
+    grid-template-columns: repeat 3, 1fr;
     grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
-    grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
+    grid-template-areas: "h3-tour h3-tour h3-tour" "tourg1 img-tour tourg2" "tourg3 img-tour tourg4" "tourg5 img-tour-2 tourg6" "button-tour button-tour button-tour";
+  }
+  .impala-tour .h3-tour {
+    background: none;
+  }
+  .impala-tour .img-tour {
+    grid-area: img-tour;
+    text-align: center;
   }
 }
 .impala-merch {
@@ -13513,9 +13526,9 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg5.jpg);
   background-size: cover;
   height: auto;
-  grid-template-columns: repeat repeat(2, 1fr);
-  grid-template-rows: 50vh 100vh 100vh 100vh 50vh;
-  grid-template-areas: "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
+  grid-template-columns: repeat repeat(3, 1fr);
+  grid-template-rows: 50vh 70vh 50vh 30vh;
+  grid-template-areas: "h3-merch h3-merch h3-merch" ". . ." "merch-1 merch-2 merch-3 " "merch-4 merch-5 merch-6 ";
 }
 #merchpage .h3-merch {
   background: none;
@@ -13584,24 +13597,23 @@ body {
   align-items: center;
 }
 
-/*----------DESKTOP-SM----------*/
+/*----------DESKTOP-SM--------------------DESKTOP-SM--------------------DESKTOP-SM--------------------DESKTOP-SM--------------------DESKTOP-SM----------*/
 @media (min-width: 769px) and (max-width: 992px) {
   body {
-    overflow-x: hidden;
     background-image: url(../multimedia/background/bgbase1.jpg);
     background-repeat: repeat;
   }
   .navbar .logo img {
-    width: 13rem;
+    width: 20rem;
     height: auto;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
+    padding-left: 4rem;
+    padding-top: 0.3rem;
   }
   .navbar .menu {
     padding: 4rem 4rem 4rem 8rem;
   }
-  .navbar .menu a {
-    font-size: 0.8rem;
+  .navbar .menu li a {
+    font-size: 1.4rem;
     line-height: 1.8rem;
     padding: 1rem;
   }
@@ -13616,15 +13628,22 @@ body {
     padding-right: 1rem;
   }
   .impala-tour {
+    background: none;
     grid-template-rows: 15vh 35vh 35vh 35vh 28vh;
     grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour";
+  }
+  .impala-tour .img-tour {
+    display: none;
+  }
+  .impala-tour .h3-tour {
+    background: none;
   }
   .impala-nov {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40vh 60vh 100%;
-    grid-template-areas: ". icong ." ". susg ." ". leakg .";
+    grid-template-rows: 40vh 60vh 100% 20vh;
+    grid-template-areas: ". icong ." ". susg ." "leakg leakg leakg" ". . . ";
   }
   .impala-nov .logo-music {
     display: flex;
@@ -13895,7 +13914,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(2, 1fr);
-    grid-template-rows: 40vh 70vh 70vh 70vh 70vh;
+    grid-template-rows: 40vh 70vh 70vh 70vh 20vh;
     grid-template-areas: "h3-merch h3-merch" ". ." "merch-1 merch-2" "merch-3 merch-4" "merch-5 merch-6";
   }
   #merchpage .h3-merch {
@@ -13909,7 +13928,7 @@ body {
     align-items: center;
   }
 }
-/*----------TABLET----------*/
+/*----------TABLET--------------------TABLET--------------------TABLET--------------------TABLET--------------------TABLET--------------------TABLET----------*/
 @media (min-width: 576px) and (max-width: 769px) {
   body {
     width: 100%;
@@ -13951,6 +13970,9 @@ body {
     padding-left: 0.5rem;
     padding-right: 1.5rem;
   }
+  .impala-intro .img-tour {
+    display: none;
+  }
   .impala-nov {
     background: none;
     width: 100%;
@@ -13978,8 +14000,11 @@ body {
     background: none;
     height: auto;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: 20vh 50vh 50vh 50vh 30vh 10vh;
+    grid-template-rows: 20vh 50vh 50vh 50vh 28vh 10vh;
     grid-template-areas: "h3-tour h3-tour" "tourg1 tourg2" "tourg3 tourg4" "tourg5 tourg6" "button-tour button-tour" ". .";
+  }
+  .impala-tour .img-tour {
+    display: none;
   }
   .impala-merch {
     background: none;
@@ -14004,9 +14029,6 @@ body {
   .impala-merch .pie-socialmedia a img {
     width: 3.1rem;
     height: 3.1rem;
-  }
-  .footerg {
-    background: none;
   }
   /*ComunidadPage*/
   .communitypage {
@@ -14333,10 +14355,9 @@ body {
     align-items: center;
   }
 }
-/*----------SMARTPHONE----------*/
+/*----------SMARTPHONE--------------------SMARTPHONE--------------------SMARTPHONE--------------------SMARTPHONE--------------------SMARTPHONE----------*/
 @media (max-width: 576px) {
   body {
-    overflow-x: hidden;
     width: 100%;
     height: auto;
     background-image: url(../multimedia/background/bgbase1.jpg);
@@ -14354,8 +14375,8 @@ body {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 10vh 20vh 20vh 40vh 40vh 40vh 30vh;
-    grid-template-areas: "." "cg" "cg" "cg " "introg " "introg " ". ";
+    grid-template-rows: 10vh 20vh 20vh 40vh 40vh 40vh;
+    grid-template-areas: "." "cg" "cg" "cg " "introg " "introg ";
     /*----Carousel----*/
   }
   .impala-intro .introg {
@@ -14429,6 +14450,9 @@ body {
     padding-top: 6rem;
     padding-bottom: 8rem;
     background: none;
+  }
+  .impala-tour .img-tour {
+    display: none;
   }
   .impala-merch {
     width: 100%;
@@ -14513,6 +14537,8 @@ body {
   }
   .button-merch a {
     padding-bottom: 10rem;
+    margin: 0;
+    padding: 0;
     background: none;
     border: 2px solid rgb(224, 210, 255);
     border-radius: 3rem;
@@ -14527,13 +14553,12 @@ body {
   }
   .button-merch a:hover {
     box-shadow: none;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(100, 10, 180);
     color: rgb(243, 243, 243);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
   }
   .footerg {
     width: 100%;
-    background: none;
     display: grid;
     justify-items: center;
     align-content: space-evenly;
@@ -14792,7 +14817,7 @@ body {
     justify-items: center;
     align-content: space-evenly;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/background/bg3.jpg);
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
@@ -14817,7 +14842,7 @@ body {
     background-size: cover;
     height: auto;
     grid-template-columns: repeat repeat(1, 1fr);
-    grid-template-rows: 0vh 90.5vh 50vh 50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 0vh 105vh 50vh 50vh 50vh 50vh 50vh 50vh;
     grid-template-areas: "." "h3-merch" "merch-1" "merch-2" "merch-3" "merch-4" "merch-5" "merch-6";
     background-repeat: repeat;
     background-size: center;
@@ -14833,7 +14858,7 @@ body {
     max-width: 17rem;
     text-align: center;
     font-weight: 700;
-    margin-top: 22rem;
+    margin-top: 30rem;
   }
   #merchpage .merch-1 .nowrap {
     font-size: 1.2rem;
